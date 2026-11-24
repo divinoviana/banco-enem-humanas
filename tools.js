@@ -293,6 +293,61 @@
     else $('#toolOut').innerHTML = `<div class="out-vazio"><b>${m === 'pei' ? 'O PEI aparece aqui.' : 'A atividade aparece aqui.'}</b><p>${m === 'pei' ? 'Preencha o estudante e o componente e clique em Gerar PEI. Você poderá editar cada campo antes de copiar para o SGE ou baixar em PDF e Word.' : 'Preencha o estudante e a aula e clique em Gerar atividade. Você verá a folha pronta, com opção de baixar em PDF ou Word, e pode gerar outras versões.'}</p></div>`;
   }
 
+  // ---------- listas do DCT-TO (Ciências Humanas) ----------
+  let DCT = null, carregandoDCT = null;
+  const SIGLA = { 'Filosofia': 'FIL', 'Sociologia': 'SOC', 'História': 'HIS', 'Geografia': 'GEO' };
+  function carregarDCT() {
+    if (DCT) return Promise.resolve(DCT);
+    return carregandoDCT ||= fetch('dct-chsa.json?v=1').then(r => { if (!r.ok) throw new Error(); return r.json() }).then(j => (DCT = j)).catch(() => { carregandoDCT = null; return null });
+  }
+  const curto = (t, n = 110) => t.length > n ? t.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : t;
+  function itensObjeto(o) {
+    const partes = o.split(/;\s*/).map(x => x.trim().replace(/\.$/, '')).filter(x => x.length > 2);
+    return partes.length > 1 ? partes : o.split(/\.\s+(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ])/).map(x => x.trim().replace(/\.$/, '')).filter(x => x.length > 2);
+  }
+  async function atualizarListasDCT() {
+    const sig = SIGLA[$('#pComp').value];
+    const hab = $('#pHabLista'), obj = $('#pObjLista');
+    if (!sig) {
+      hab.innerHTML = '<option value="">Lista disponível só para Filosofia, Sociologia, História e Geografia</option>'; hab.disabled = true;
+      obj.innerHTML = '<option value="">—</option>'; obj.disabled = true; return;
+    }
+    const d = await carregarDCT();
+    if (!d) { hab.innerHTML = '<option value="">Não foi possível carregar a lista. Escreva a habilidade abaixo.</option>'; hab.disabled = true; return }
+    const ents = d.entradas.filter(e => e.k === sig);
+    hab.disabled = false;
+    hab.innerHTML = '<option value="">Escolha na lista do DCT-TO…</option>' + ents.map((e, i) =>
+      `<option value="${i}">${esc(e.c)} — ${esc(curto(d.bncc[e.c] || e.d))}</option>`).join('');
+    hab._ents = ents;
+    obj.disabled = true; obj.innerHTML = '<option value="">Escolha primeiro a habilidade</option>';
+  }
+  function anexar(el, texto) {
+    const atual = el.value.trim();
+    if (atual.includes(texto)) return;
+    el.value = atual ? atual + '\n' + texto : texto;
+    el.dispatchEvent(new Event('input'));
+  }
+  function escolherHabilidade() {
+    const hab = $('#pHabLista'), obj = $('#pObjLista');
+    const e = hab._ents && hab._ents[hab.value];
+    if (!e) return;
+    const comp = $('#pComp').value;
+    anexar($('#pHabTurma'), `(${e.c}) ${DCT.bncc[e.c] || ''}${e.d ? ` DCT-TO (${comp}): ${e.d}` : ''}`.trim());
+    const itens = e.o ? itensObjeto(e.o) : [e.d];
+    obj.disabled = false;
+    obj.innerHTML = `<option value="">Escolha o objeto do conhecimento (${esc(e.c)})…</option>` +
+      (itens.length > 1 ? `<option value="__todos">Todos os objetos desta habilidade</option>` : '') +
+      itens.map((t, i) => `<option value="${i}">${esc(curto(t, 120))}</option>`).join('');
+    obj._itens = itens; obj._todos = e.o || e.d;
+    hab.value = '';
+  }
+  function escolherObjeto() {
+    const obj = $('#pObjLista');
+    if (obj.value === '') return;
+    anexar($('#pObjeto'), obj.value === '__todos' ? obj._todos : obj._itens[obj.value]);
+    obj.value = '';
+  }
+
   let iniciado = false;
   window.Ferramentas = {
     async abrir(m) {
@@ -305,6 +360,10 @@
         $('#aComp').addEventListener('change', () => { atualizarFormatos(); atualizarTemaInfo() });
         $('#aFormato').addEventListener('change', atualizarFormatoDesc);
         $('#aTema').addEventListener('input', atualizarTemaInfo);
+        $('#pComp').addEventListener('change', atualizarListasDCT);
+        $('#pHabLista').addEventListener('change', escolherHabilidade);
+        $('#pObjLista').addEventListener('change', escolherObjeto);
+        atualizarListasDCT();
         $('#toolForm').addEventListener('submit', e => { e.preventDefault(); modo === 'pei' ? gerarPEI() : gerarAtividade(true) });
         $('#toolOut').addEventListener('click', e => {
           const b = e.target.closest('button'); if (!b) return;
