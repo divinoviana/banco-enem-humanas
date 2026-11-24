@@ -117,11 +117,23 @@ ol.alts li img { max-height: 220px }
 .pix .linkbtn { font-size: 12.5px }
 body[data-view="banco"] .pix .wrap { padding-bottom: 90px }
 .pix .msg { font-size: 12px; min-height: 0 }
-.tabs { background: var(--azul); }
-.tabs .wrap { display: flex; gap: 4px; overflow-x: auto; padding-block: 0 }
-.tabs a { color: var(--azul-ink); opacity: .82; text-decoration: none; font-weight: 600; font-size: 14px; padding: 10px 14px 9px; border-bottom: 3px solid transparent; white-space: nowrap }
-.tabs a:hover { opacity: 1 }
-.tabs a[aria-current="page"] { opacity: 1; border-bottom-color: var(--azul-ink) }
+.tabs { background: var(--azul) }
+.tabs .wrap { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding-block: 6px 0 }
+.tabs a { display: flex; align-items: center; gap: 12px; min-width: 0; text-decoration: none; color: var(--azul-ink); background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); border-bottom: 0; border-radius: 12px 12px 0 0; padding: 12px 16px 14px; transition: background .15s }
+.tabs a:hover { background: rgba(255,255,255,.2) }
+.tabs a span { display: grid; min-width: 0 }
+.tabs a b { font-size: 16px; font-weight: 800; letter-spacing: -.005em; line-height: 1.2 }
+.tabs a small { font-size: 12.5px; opacity: .85; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.tab-ic { flex: none; width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round }
+.tabs a[aria-current="page"] { background: var(--paper); color: var(--azul); border-color: var(--paper); box-shadow: 0 -2px 0 var(--paper) inset }
+.tabs a[aria-current="page"] small { color: var(--muted); opacity: 1 }
+@media (max-width: 720px) {
+  .tabs .wrap { gap: 6px }
+  .tabs a { flex-direction: column; align-items: center; text-align: center; gap: 4px; padding: 10px 6px 12px }
+  .tabs a b { font-size: 13px }
+  .tabs a small { display: none }
+  .tab-ic { width: 24px; height: 24px }
+}
 .tools { padding-block: 20px 60px }
 .tools-head h2 { margin: 0 0 4px; font-size: 22px; font-weight: 800 }
 .tools-head p { margin: 0 0 6px; max-width: 75ch; color: var(--muted) }
@@ -270,9 +282,9 @@ details.card.mais:not([open]) { display: block }
 </div></header>
 
 <nav class="tabs" aria-label="Seções do site"><div class="wrap">
-  <a href="#banco" data-view="banco">Banco de questões ENEM</a>
-  <a href="#atividades" data-view="atividades">Atividades adaptadas</a>
-  <a href="#pei" data-view="pei">PEI (padrão SGE)</a>
+  <a href="#banco" data-view="banco"><svg class="tab-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5z"/><path d="M13 4h5.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H13z"/><path d="M7 8h1.5M7 11h1.5M16 8h1.5M16 11h1.5"/></svg><span><b>Banco de questões ENEM</b><small>1.170 questões com gabarito</small></span></a>
+  <a href="#atividades" data-view="atividades"><svg class="tab-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4h6v3a2 2 0 1 0 0 4v3h-3a2 2 0 1 0-4 0H4v-4a2 2 0 1 0 0-4V4z" transform="translate(2 2)"/></svg><span><b>Atividades adaptadas</b><small>Folha A4 para neurodivergentes</small></span></a>
+  <a href="#pei" data-view="pei"><svg class="tab-ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></svg><span><b>PEI no padrão SGE</b><small>Campos prontos para copiar</small></span></a>
 </div></nav>
 
 
