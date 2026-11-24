@@ -111,6 +111,13 @@ ol.alts li img { max-height: 220px }
 .gabline { margin: 0; padding: 0 16px 12px; font-size: 14px; color: var(--muted); display: none }
 .reveal .gabline { display: block }
 .reveal .gabline b { color: var(--ok); font-size: 16px }
+.pix { background: var(--azul-soft); border-bottom: 1px solid var(--line) }
+.pix .wrap { padding-block: 12px; display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between }
+.pix-msg { margin: 0; max-width: 70ch; font-size: 14px }
+.pix-key { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 14px }
+.pix-label { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700 }
+.pix-key b { font-variant-numeric: tabular-nums; font-size: 16px; user-select: all }
+.pix-name { color: var(--muted) }
 .empty { padding: 40px 16px; text-align: center; color: var(--muted); background: var(--sheet); border: 1px dashed var(--line); border-radius: 10px }
 #loadMore { justify-self: center }
 
@@ -154,6 +161,19 @@ ol.alts li img { max-height: 220px }
   </div>
   <div class="stats" id="stats"></div>
 </div></header>
+
+<aside class="pix" aria-label="Contribuição">
+  <div class="wrap">
+    <p class="pix-msg">Ajude-nos a facilitar a vida dos professores de Ciências Humanas e Sociais: contribua com o pagamento do banco de dados. Muitas coisas boas ainda virão!</p>
+    <div class="pix-key">
+      <span class="pix-label">Pix (celular)</span>
+      <b id="pixKey">(63) 9 9919-1919</b>
+      <span class="pix-name">Prof. Me. Divino Viana</span>
+      <button class="btn" id="copyPix">Copiar chave Pix</button>
+      <span class="msg" id="msgPix" aria-live="polite"></span>
+    </div>
+  </div>
+</aside>
 
 <div class="bar"><div class="wrap">
   <button class="btn" id="toggleFilters" aria-expanded="false">Filtros</button>
@@ -502,6 +522,12 @@ document.addEventListener('click', e => {
   }
   else if (t.id === 'dlProva') { if (!sel.length) { $('#msgProva').textContent = 'Adicione questões à prova primeiro.'; return } $('#msgProva').textContent = 'Preparando o arquivo…'; provaHTML().then(h => save(slug($('#tTitulo').value) + '.html', h, '#msgProva'), () => $('#msgProva').textContent = 'Não foi possível carregar as imagens. Tente de novo.') }
   else if (t.id === 'dlListaCsv') { if (!sel.length) { $('#msgProva').textContent = 'Adicione questões à prova primeiro.'; return } save(slug($('#tTitulo').value) + '.csv', csvOf(sel.map(id => byId[id])), '#msgProva') }
+  else if (t.id === 'copyPix') {
+    const key = '63999191919';
+    const ok = () => $('#msgPix').textContent = 'Chave copiada. Cole no app do banco, em Pix > Celular.';
+    const fail = () => { const r = document.createRange(); r.selectNodeContents($('#pixKey')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); $('#msgPix').textContent = 'Chave selecionada. Copie com Ctrl+C.' };
+    navigator.clipboard ? navigator.clipboard.writeText(key).then(ok, fail) : fail();
+  }
   else if (t.id === 'copyTxt') {
     if (!sel.length) { $('#msgProva').textContent = 'Adicione questões à prova primeiro.'; return }
     const txt = sel.map((id, i) => { const q = byId[id]; return `Questão ${i + 1} (ENEM ${q.ano}${q.apl !== 'reg' ? ' ' + APL[q.apl] : ''} – Q${q.num})\n` + (q.imgOnly ? '[questão em imagem: use o arquivo .html]' : `${plain(q.enun)}\n` + 'ABCDE'.split('').map(L => `(${L}) ${plain(q.alts[L])}`).join('\n')) }).join('\n\n') + '\n\nGabarito: ' + sel.map((id, i) => `${i + 1}-${byId[id].gab}`).join('  ');
