@@ -117,6 +117,29 @@ ol.alts li img { max-height: 220px }
 .pix .linkbtn { font-size: 12.5px }
 body[data-view="banco"] .pix .wrap { padding-bottom: 90px }
 .pix .msg { font-size: 12px; min-height: 0 }
+.fale { display: flex; justify-content: center; padding: 18px 16px 4px }
+.fale .btn { display: inline-flex; gap: 8px; align-items: center; font-size: 14px; padding: 10px 16px; border-color: var(--azul); color: var(--azul) }
+.fale .btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round }
+dialog.contato { border: 1px solid var(--line); border-radius: 12px; padding: 0; width: min(480px, calc(100vw - 32px)); background: var(--sheet); color: var(--ink) }
+dialog.contato::backdrop { background: rgb(0 0 0 / .45) }
+.contato form { padding: 18px 18px 16px; display: grid; gap: 12px }
+.contato h2 { margin: 0; font-size: 18px }
+.contato p.sub { margin: -6px 0 0; font-size: 13px; color: var(--muted) }
+.contato .tipos { display: flex; flex-wrap: wrap; gap: 6px }
+.contato .tipos label { cursor: pointer }
+.contato .tipos input { position: absolute; opacity: 0; pointer-events: none }
+.contato .tipos span { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 13px; background: var(--sheet) }
+.contato .tipos input:checked + span { background: var(--azul); border-color: var(--azul); color: var(--azul-ink, #fff); font-weight: 600 }
+.contato .tipos input:focus-visible + span { outline: 2px solid var(--azul); outline-offset: 2px }
+.contato label.f { display: grid; gap: 4px; font-size: 13px; font-weight: 600 }
+.contato label.f small { font-weight: 400; color: var(--muted) }
+.contato input[type=text], .contato textarea { font: inherit; font-weight: 400; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); width: 100%; box-sizing: border-box }
+.contato textarea { min-height: 110px; resize: vertical }
+.contato .ref { font-size: 12.5px; background: var(--azul-soft); border-radius: 8px; padding: 8px 10px }
+.contato .acoes { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; align-items: center }
+.contato .acoes .zap { background: #1f8f4e; border-color: #1f8f4e; color: #fff }
+.contato .acoes .msg { margin-right: auto; font-size: 12px; color: var(--muted) }
+.qfoot .linkbtn.erro { font-size: 12px; color: var(--muted) }
 .tabs { background: var(--azul) }
 .tabs .wrap { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding-block: 6px 0 }
 .tabs a { display: flex; align-items: center; gap: 12px; min-width: 0; text-decoration: none; color: var(--azul-ink); background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); border-bottom: 0; border-radius: 12px 12px 0 0; padding: 12px 16px 14px; transition: background .15s }
@@ -452,6 +475,30 @@ details.card.mais:not([open]) { display: block }
   </div>
 </div>
 
+<div class="fale"><button class="btn" id="abrirContato" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.9A8 8 0 1 1 21 12z"/></svg>Mande um agradecimento ou sugestão</button></div>
+<dialog class="contato" id="contato" aria-labelledby="ctTitulo">
+  <form method="dialog" id="ctForm">
+    <h2 id="ctTitulo">Fale com o Prof. Divino</h2>
+    <p class="sub">A mensagem abre pronta no seu WhatsApp; é só tocar em enviar.</p>
+    <div class="tipos" role="radiogroup" aria-label="Tipo de mensagem">
+      <label><input type="radio" name="ctTipo" value="Agradecimento" checked><span>💛 Agradecimento</span></label>
+      <label><input type="radio" name="ctTipo" value="Sugestão"><span>💡 Sugestão</span></label>
+      <label><input type="radio" name="ctTipo" value="Erro em questão"><span>⚠️ Erro em questão</span></label>
+      <label><input type="radio" name="ctTipo" value="Outro assunto"><span>Outro</span></label>
+    </div>
+    <div class="ref" id="ctRef" hidden></div>
+    <label class="f">Mensagem<textarea id="ctMsg" required placeholder="Escreva aqui…"></textarea></label>
+    <label class="f">Seu nome <small>(opcional)</small><input type="text" id="ctNome" autocomplete="name"></label>
+    <label class="f">Escola e cidade <small>(opcional)</small><input type="text" id="ctEscola" placeholder="Ex.: CEM Tiradentes, Araguaína"></label>
+    <div class="acoes">
+      <span class="msg" id="ctAviso" aria-live="polite"></span>
+      <button class="btn ghost" type="button" id="ctFechar">Cancelar</button>
+      <button class="btn ghost" type="button" id="ctCopiar">Copiar texto</button>
+      <button class="btn zap" type="submit" id="ctEnviar">Enviar pelo WhatsApp</button>
+    </div>
+  </form>
+</dialog>
+
 <footer class="pix" aria-label="Apoie o projeto"><div class="wrap">
   <span>Quer ajudar a manter este projeto? Doe qualquer valor!</span>
   <span class="pix-key">Pix: <b id="pixKey">(63) 9 9919-1919</b> · Prof. Me. Divino Viana</span>
@@ -570,6 +617,7 @@ function card(q) {
     <div class="qfoot">
       <button class="btn" data-act="add" aria-pressed="${inSel}">${inSel ? '✓ Na lista' : '+ Adicionar à prova'}</button>
       <button class="btn ghost" data-act="gab">${st.reveal ? 'Ocultar gabarito' : 'Ver gabarito'}</button>
+      <button class="linkbtn erro" data-act="erro">Avisar erro</button>
       <span class="src">${q.imgOnly ? 'Imagem do caderno original · ' : ''}${AREAS[q.area] || ''}</span>
     </div></article>`;
 }
@@ -738,6 +786,39 @@ async function save(filename, data, msgEl) {
 const slug = s => norm(s).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'prova';
 
 // ---- events
+// ---- contato (WhatsApp)
+const ZAP = '5563999191919';
+let ctQ = null;
+function abrirContato(tipo, q) {
+  const d = $('#contato'); ctQ = q || null;
+  d.querySelector(`input[name=ctTipo][value="${tipo || 'Agradecimento'}"]`).checked = true;
+  $('#ctRef').hidden = !ctQ; if (ctQ) $('#ctRef').textContent = 'Questão: ' + rotulo(ctQ);
+  $('#ctMsg').placeholder = ctQ ? 'Qual é o problema? Ex.: gabarito trocado, texto cortado, imagem faltando…' : 'Escreva aqui…';
+  try { $('#ctNome').value ||= localStorage.getItem('ct-nome') || ''; $('#ctEscola').value ||= localStorage.getItem('ct-escola') || '' } catch {}
+  $('#ctAviso').textContent = '';
+  d.showModal(); setTimeout(() => $('#ctMsg').focus(), 50);
+}
+function textoContato() {
+  const tipo = document.querySelector('input[name=ctTipo]:checked').value;
+  const nome = $('#ctNome').value.trim(), esc = $('#ctEscola').value.trim(), msg = $('#ctMsg').value.trim();
+  try { localStorage.setItem('ct-nome', nome); localStorage.setItem('ct-escola', esc) } catch {}
+  return [`*Banco de Questões TO – ${tipo}*`, ctQ ? `Questão: ${rotulo(ctQ)} [${ctQ.id}]` : '', nome ? `Nome: ${nome}` : '', esc ? `Escola/cidade: ${esc}` : '', '', msg].filter((l, i) => l || i === 4).join('\n');
+}
+$('#abrirContato').addEventListener('click', () => abrirContato());
+$('#ctFechar').addEventListener('click', () => $('#contato').close());
+$('#contato').addEventListener('click', e => { if (e.target === e.currentTarget) e.currentTarget.close() });
+$('#ctForm').addEventListener('submit', e => {
+  e.preventDefault();
+  if (!$('#ctMsg').value.trim()) { $('#ctAviso').textContent = 'Escreva a mensagem.'; $('#ctMsg').focus(); return }
+  window.open('https://wa.me/' + ZAP + '?text=' + encodeURIComponent(textoContato()), '_blank', 'noopener');
+  $('#ctAviso').textContent = 'Abrimos o WhatsApp. Obrigado!';
+  setTimeout(() => { $('#contato').close(); $('#ctMsg').value = '' }, 1500);
+});
+$('#ctCopiar').addEventListener('click', () => {
+  if (!$('#ctMsg').value.trim()) { $('#ctAviso').textContent = 'Escreva a mensagem.'; return }
+  navigator.clipboard.writeText(textoContato() + '\n\n(Enviar para o WhatsApp (63) 9 9919-1919)').then(() => $('#ctAviso').textContent = 'Texto copiado.', () => $('#ctAviso').textContent = 'Não foi possível copiar.');
+});
+
 document.addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return;
   if (t.dataset.ano) { const a = +t.dataset.ano; st.anos.has(a) ? st.anos.delete(a) : st.anos.add(a); st.shown = 20; render() }
@@ -748,6 +829,7 @@ document.addEventListener('click', e => {
     const c = t.closest('.qcard'), id = c.dataset.id;
     if (t.dataset.act === 'add') toggleSel(id);
     if (t.dataset.act === 'gab') { const on = c.classList.toggle('reveal'); t.textContent = on ? 'Ocultar gabarito' : 'Ver gabarito' }
+    if (t.dataset.act === 'erro') abrirContato('Erro em questão', byId[id]);
     if (t.dataset.act === 'more') { c.querySelector('.qbody').classList.remove('clamp'); t.hidden = true }
   }
   else if (t.id === 'revealAll') { st.reveal = !st.reveal; t.setAttribute('aria-pressed', st.reveal); t.textContent = st.reveal ? 'Ocultar gabaritos' : 'Mostrar gabaritos'; renderList() }
