@@ -1,0 +1,839 @@
+{
+ "fonte": "SEDUC-TO. Documento Curricular do Território do Tocantins (DCT-TO), Ensino Médio, Caderno 2 – Anexo: Sistematização de Aprendizagens de Linguagens e suas Tecnologias. Resolução CEE-TO nº 169/2022.",
+ "bncc": {
+  "EM13LGG101": "Compreender e analisar processos de produção e circulação de discursos, nas diferentes linguagens, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos.",
+  "EM13LGG102": "Analisar visões de mundo, conflitos de interesse, preconceitos e ideologias presentes nos discursos veiculados nas diferentes mídias, ampliando suas possibilidades de explicação, interpretação e intervenção crítica da/na realidade.",
+  "EM13LGG103": "Analisar o funcionamento das diversas línguagens, para interpretar e produzir criticamente discursos em textos de diversas semioses (visuais, verbais, sonoras gestuais).",
+  "EM13LGG104": "Utilizar as diferentes linguagens, levando em conta seus funcionamentos, para a compreensão e produção de textos e discursos em diversos campos de atuação social.",
+  "EM13LGG105": "Analisar e experimentar diversos processos de remidiação de produções multissemióticas, multimídia e transmídia, desenvolvendo diferentes modos de participação e intervenção social. o diálogo, a resolução de conflitos e a cooperação, e combatendo preconceitos de qualquer natureza.",
+  "EM13LGG201": "Utilizar as diversas linguagens (artísticas, corporais e verbai) em diferentes contextos, valorizando-as como fenômeno social, cultural, histórico, variável, heterogêneo e sensível aos contextos de uso.",
+  "EM13LGG202": "Analisar interesses, relações de poder e perspectivas de mundo nos discursos das diversas práticas das linguagens (artísticas, corporais e verbais), compreendendo criticamente o modo como circulam, constituem-se e (re)produzem significação e ideologias.",
+  "EM13LGG203": "Analisar os diálogos e os processos de disputa por legitimidade nas práticas de linguagem e em suas produções (artísticas, corporais e verbais).",
+  "EM13LGG204": "Dialogar e produzir entendimento mútuo, nas diversas linguagens (artísticas, corporais e verbais), com vistas ao interesse comum pautado em princípios e valores de equidade assentados na democracia e nos Direitos Humanos.",
+  "EM13LGG301": "Participar de processos de produção individual e colaborativa em diferentes linguages (artísticas, corporais e verbais), levando em conta suas formas e seus funcionamentos, para produzir sentidos em diferentes contextos.",
+  "EM13LGG302": "Posicionar-se criticamente diante de diversas visões de mundo presentes nos discursos em diferentes linguagens, levando em conta seus contextos de produção e de circulação.",
+  "EM13LGG303": "Debater questões polêmicas de relevância social, analisando diferentes argumentos e opiniões, para formular, negociar e sustentar posições, frente à análise de perspectivas distintas.",
+  "EM13LGG304": "Formular propostas, intervir e tomar decisões que levem em conta o bem comum e os Direitos Humanos, a consciência socioambiental e o consumo responsável em âmbito local, regional e global.",
+  "EM13LGG305": "Mapear e criar, por meio de práticas de linguagem, possibilidades de atuação social, política, artística e cultural para enfrentar desafios contemporâneos, discutindo princípios e objetivos dessa atuação de maneira crítica, criativa, solidária e ética.",
+  "EM13LGG401": "Analisar criticamente textos de modo a compreender e caracterizar as línguas como fenômeno (geo)político, histórico, social, cultural, variável, heterogêneo e sensível aos contextos de uso.",
+  "EM13LGG402": "Empregar, nas interações sociais, a variedade e o estilo de língua adequados à situação comunicativa, ao(s) interlocutor(es) e ao gênero do discurso, respeitando os usos das línguas por esse(s) interlocutor(es) e sem preconceito linguístico.",
+  "EM13LGG403": "Fazer uso do inglês como língua de comunicação global, levando em conta a multiplicidade e variedade de usos, usuários e funções dessa língua no mundo contemporâneo. como formas de expressão de valores e identidades, em uma perspectiva democrática e de respeito à diversidade.",
+  "EM13LGG501": "Selecionar e utilizar movimentos corporais de forma consciente e intencional para interagir socialmente em práticas corporais, de modo a estabelecer relações construtivas, empáticas, éticas e de respeito às diferenças.",
+  "EM13LGG502": "Analisar criticamente preconceitos, estereótipos e relações de poder presentes nas práticas corporais, adotando posicionamento contrário a qualquer manifestação de injustiça e desrespeito a direitos humanos e valores democráticos.",
+  "EM13LGG503": "Vivenciar práticas corporais e significálas em seu projeto de vida, como forma de autoconhecimento, autocuidado com o corpo e com a saúde, socialização e entretenimento. com respeito à diversidade de saberes, identidades e culturas.",
+  "EM13LGG601": "Apropriar-se do patrimônio artístico de diferentes tempos e lugares, compreendendo a sua diversidade, bem como os processos de legitimação das manifestações artísticas na sociedade, desenvolvendo visão estética crítica e histórica.",
+  "EM13LGG602": "Fruir e apreciar esteticamente diversas manifestações artísticas e culturais, das locais às mundiais, assim como delas participar, de modo a aguçar continuamente a sensibilidade, a imaginação e a criatividade.",
+  "EM13LGG603": "Expressar-se e atuar em processos de criação autorais individuais e coletivos nas diferentes linguagens artísticas (artes visuais, audiovisual, dança, música e teatro) e nas intersecções entre elas, recorrendo a referências estéticas e culturais, conhecimentos de naturezas diversas (artísticos, históricos, sociais e políticos) e experiências individuais e coletivas.",
+  "EM13LGG604": "Relacionar as práticas artísticas às diferentes dimensões da vida social, cultural, política e econômica e identificar o processo de construção histórica dessas práticas.",
+  "EM13LGG701": "Explorar tecnologias digitais da informação e comunicação (TDIC), compreendendo seus princípios e funcionalidades, e utilizá-las de modo ético, criativo, responsável e adequado a práticas de linguagem em diferentes contextos.",
+  "EM13LGG702": "Avaliar o impacto das tecnologias digitais da informação e comunicação (TDIC) na formação do sujeito e em suas práticas sociais, para fazer uso crítico dessa mídia em práticas de seleção, compreensão e produção de discursos em ambiente digital.",
+  "EM13LGG703": "Utilizar diferentes linguagens, mídias e ferramentas digitais em processos de produção coletiva, colaborativa e projetos autorais em ambientes digitais.",
+  "EM13LGG704": "Apropriar-se criticamente de processos de pesquisa e busca de informação, por meio de ferramentas e dos novos formatos de produção e distribuição do conhecimento na cultura de rede. SISTEMATIZAÇÃO DAS APRENDIZAGENS ESSENCIAIS DA ÁREA DE LINGUAGENS - COMPONENTE CURRICULAR LÍNGUA PORTUGUESA interpretação crítica da realidade e para continuar aprendendo. HABILIDADES ESPECÍFICAS DE LINGUA PORTUGUESA PRÁTICAS DE LINGUAGEM: Leitura, escuta, produção de textos (orais, escritos, multissemióticos) e análise linguística/semiótica",
+  "EM13LP02": "Estabelecer relações entre as partes do texto, tanto na produção como na leitura/escuta, considerando a construção composicional e o estilo do gênero, usando/reconhecendo adequadamente elementos e recursos coesivos diversos que contribuam para a coerência, a continuidade do texto e sua progressão temática, e organizando informações, tendo em vista as condições de produção e as relações lógico-discursivas envolvidas (causa/efeito ou consequência; tese/argumentos; problema/solução; definição/exemplos etc.).",
+  "EM13LP03": "Analisar relações de intertextualidade e interdiscursividade que permitam a explicitação de relações dialógicas, a identificação de posicionamentos ou de perspectivas, a compreensão de paráfrases, paródias e estilizações, entre outras possibilidades.",
+  "EM13LP04": "Estabelecer relações de interdiscursividade e intertextualidade para explicitar, sustentar e conferir consistência a posicionamentos e para construir e corroborar explicações e relatos, fazendo uso de citações e paráfrases devidamente marcadas.",
+  "EM13LP06": "Analisar efeitos de sentido decorrentes de usos expressivos da linguagem, da escolha de determinadas palavras ou expressões e da ordenação, combinação e contraposição de palavras, dentre outros, para ampliar as possibilidades de construção de sentidos e de uso crítico da língua.",
+  "EM13LP07": "Analisar, em textos de diferentes gêneros, marcas que expressam a posição do enunciador frente àquilo que é dito: uso de diferentes modalidades (epistêmica, deôntica e apreciativa) e de diferentes recursos gramaticais que operam como modalizadores (verbos modais, tempos e modos verbais, expressões modais, adjetivos, locuções ou orações adjetivas, advérbios, locuções ou orações adverbiais, entonação etc.), uso de estratégias de impessoalização (uso de terceira pessoa e de voz passiva etc.), com vistas ao incremento da compreensão e da criticidade e ao manejo adequado desses elementos nos textos produzidos, considerando os contextos de produção.",
+  "EM13LP08": "Analisar elementos e aspectos da sintaxe do português, como a ordem dos constituintes da sentença (e os efeito que causam sua inversão), a estrutura dos sintagmas, as categorias sintáticas, os processos de coordenação e subordinação (e os efeitos de seus usos) e a sintaxe de concordância e de regência, de modo a potencializar os processos de compreensão e produção de textos e a possibilitar escolhas adequadas à situação comunicativa.",
+  "EM13LP12": "Selecionar informações, dados e argumentos em fontes confiáveis, impressas e digitais, e utilizá-los de forma referenciada, para que o texto a ser produzido tenha um nível de aprofundamento adequado (para além do senso comum) e contemple a sustentação das posições defendidas.",
+  "EM13LP13": "Analisar, a partir de referências contextuais, estéticas e culturais, efeitos de sentido decorrentes de escolhas de elementos sonoros (volume, timbre, intensidade, pausas, ritmo, efeitos sonoros, sincronização etc.) e de suas relações com o verbal, levando-os em conta na produção de áudios, para ampliar as possibilidades de construção de sentidos e de apreciação.",
+  "EM13LP14": "Analisar, a partir de referências contextuais, estéticas e culturais, efeitos de sentido decorrentes de escolhas e composição das imagens (enquadramento, ângulo/vetor, foco/profundidade de campo, iluminação, cor, linhas, formas etc.) e de sua sequenciação (disposição e transição, movimentos de câmera, remix, entre outros), das performances (movimentos do corpo, gestos, ocupação do espaço cênico), dos elementos sonoros (entonação, trilha sonora, sampleamento etc.) e das relações desses elementos com o verbal, levando em conta esses efeitos nas produções de imagens e vídeos, para ampliar as possibilidades de construção de sentidos e de apreciação.",
+  "EM13LP15": "Planejar, produzir, revisar, editar, reescrever e avaliar textos escritos e multissemióticos, considerando sua adequação às condições de produção do texto, no que diz respeito ao lugar social a ser assumido e à imagem que se pretende passar a respeito de si mesmo, ao leitor pretendido, ao veículo e mídia em que o texto ou produção cultural vai circular, ao contexto imediato e sócio-histórico mais geral, ao gênero textual em questão e suas regularidades, à variedade linguística apropriada a esse contexto e ao uso do conhecimento dos aspectos notacionais (ortografia padrão, pontuação adequada, mecanismos de concordância nominal e verbal, regência verbal etc.), sempre que o contexto o exigir.",
+  "EM13LP16": "Produzir e analisar textos orais, considerando sua adequação aos contextos de produção, à forma composicional e ao estilo do gênero em questão, à clareza, à progressão temática e à variedade linguística empregada, como também aos elementos relacionados à fala (modulação de voz, entonação, ritmo, altura e intensidade, respiração etc.) e à cinestesia (postura corporal, movimentos e gestualidade significativa, expressão facial, contato de olho com plateia etc.).",
+  "EM13LP21": "Produzir, de forma colaborativa, e socializar playlists comentadas de preferências culturais e de entretenimento, revistas culturais, fanzines, e-zines ou publicações afins que divulguem, comentem e avaliem músicas, games, séries, filmes, quadrinhos, livros, peças, exposições, espetáculos de dança etc., de forma a compartilhar gostos, identificar afinidades, fomentar comunidades etc.",
+  "EM13LP23": "Analisar criticamente o histórico e o discurso político de candidatos, propagandas políticas, políticas públicas, programas e propostas de governo, de forma a participar do debate político e tomar decisões conscientes e fundamentadas.",
+  "EM13LP24": "Analisar formas não institucionalizadas de participação social, sobretudo as vinculadas a manifestações artísticas, produções culturais, intervenções urbanas e formas de expressão típica das culturas juvenis que pretendam expor uma problemática ou promover uma reflexão/ação, posicionando-se em relação a essas produções e manifestações.",
+  "EM13LP25": "Participar de reuniões na escola (conselho de escola e de classe, grêmio livre etc.), agremiações, coletivos ou movimentos, entre outros, em debates, assembleias, fóruns de discussão etc., exercitando a escuta atenta, respeitando seu turno e tempo de fala, posicionando-se de forma fundamentada, respeitosa e ética diante da apresentação de propostas e defesas de opiniões, usando estratégias linguísticas típicas de negociação e de apoio e/ou de consideração do discurso do outro (como solicitar esclarecimento, detalhamento, fazer referência direta ou retomar a fala do outro, parafraseando-a para endossá-la, enfatizá-la, complementá-la ou enfraquecê-la), considerando propostas alternativas e reformulando seu posicionamento, quando for caso, com vistas ao entendimento e ao bem comum.",
+  "EM13LP26": "Relacionar textos e documentos legais e normativos de âmbito universal, nacional, local ou escolar que envolvam a definição de direitos e deveres - em especial, os voltados a adolescentes e jovens - aos seus contextos de produção, identificando ou inferindo possíveis motivações e finalidades, como forma de ampliar a compreensão desses direitos e deveres.",
+  "EM13LP31": "Compreender criticamente textos de divulgação científica orais, escritos e multissemióticos de diferentes áreas do conhecimento, identificando sua organização tópica e a hierarquização das informações, identificando e descartando fontes não confiáveis e problematizando enfoques tendenciosos ou superficiais.",
+  "EM13LP38": "Analisar os diferentes graus de parcialidade/imparcialidade (no limite, a não neutralidade) em textos noticiosos, comparando relatos de diferentes fontes e analisando o recorte feito de fatos/dados e os efeitos de sentido provocados pelas escolhas realizadas pelo autor do texto, de forma a manter uma atitude crítica diante dos textos jornalísticos e tornar-se consciente das escolhas feitas como produtor.",
+  "EM13LP44": "Analisar formas contemporâneas de publicidade em contexto digital (advergame, anúncios em vídeos, social advertising, unboxing, narrativa mercadológica, entre outras), e peças de campanhas publicitárias e políticas (cartazes, folhetos, anúncios, propagandas em diferentes mídias, spots, jingles etc.), identificando valores e representações de situações, grupos e configurações sociais veiculadas, desconstruindo estereótipos, destacando estratégias de engajamento e viralização e explicando os mecanismos de persuasão utilizados e os efeitos de sentido provocados pelas escolhas feitas em termos de elementos e recursos linguístico-discursivos, imagéticos, sonoros, gestuais e espaciais, entre outros.",
+  "EM13LP45": "Analisar, discutir, produzir e socializar, tendo em vista temas e acontecimentos de interesse local ou global, notícias, fotodenúncias, fotorreportagens, reportagens multimidiáticas, documentários, infográficos, podcasts noticiosos, artigos de opinião, críticas da mídia, vlogs de opinião, textos de apresentação e apreciação de produções culturais (resenhas, ensaios etc.) e outros gêneros próprios das formas de expressão das culturas juvenis (vlogs e podcasts culturais, gameplay etc.), em várias mídias, vivenciando de forma significativa o papel de repórter, analista, crítico, editorialista ou articulista, leitor, vlogueiro e booktuber, entre outros.",
+  "EM13LP48": "Identificar assimilações, rupturas e permanências no processo de constituição da literatura brasileira e ao longo de sua trajetória, por meio da leitura e análise de obras fundamentais do cânone ocidental, em especial da literatura portuguesa, para perceber a historicidade de matrizes e procedimentos estéticos.",
+  "EM13LP49": "Perceber as peculiaridades estruturais e estilísticas de diferentes gêneros literários (a apreensão pessoal do cotidiano nas crônicas, a manifestação livre e subjetiva do eu lírico diante do mundo nos poemas, a múltipla perspectiva da vida humana e social dos romances, a dimensão política e social de textos da literatura marginal e da periferia etc.) para experimentar os diferentes ângulos de apreensão do indivíduo e do mundo pela literatura.",
+  "EM13LP52": "Analisar obras significativas das literaturas brasileiras e de outros países e povos, em especial a portuguesa, a indígena, a africana e a latino-americana, com base em ferramentas da crítica literária (estrutura da composição, estilo, aspectos discursivos) ou outros critérios relacionados a diferentes matrizes culturais, considerando o contexto de produção (visões de mundo, diálogos com outros textos, inserções em movimentos estéticos e culturais etc.) e o modo como dialogam com o presente.",
+  "EM13LP53": "Produzir apresentações e comentários apreciativos e críticos sobre livros, filmes, discos, canções, espetáculos de teatro e dança, exposições etc. (resenhas, vlogs e podcasts literários e artísticos, playlists comentadas, fanzines, ezines etc.).",
+  "EM13LP54": "Criar obras autorais, em diferentes gêneros e mídias - mediante seleção e apropriação de recursos textuais e expressivos do repertório artístico -, e/ou produções derivadas (paródias, estilizações, fanfics, fanclipes etc.), como forma de dialogar crítica e/ou subjetivamente com o texto literário. o diálogo, a resolução de conflitos e a cooperação, e combatendo preconceitos de qualquer natureza.",
+  "EM13LP01": "Relacionar o texto, tanto na produção como na leitura/escuta, com suas condições de produção e seu contexto sócio-histórico de circulação (leitor/audiência previstos, objetivos, pontos de vista e perspectivas, papel social do autor, época, gênero do discurso etc.), de forma a ampliar as possibilidades de construção de sentidos e de análise crítica e produzir textos adequados a diferentes situações.",
+  "EM13LP20": "Compartilhar gostos, interesses, práticas culturais, temas/ problemas/questões que despertam maior interesse ou preocupação, respeitando e valorizando diferenças, como forma de identificar afinidades e interesses comuns, como também de organizar e/ou participar de grupos, clubes, oficinas e afins.",
+  "EM13LP29": "Resumir e resenhar textos, por meio do uso de paráfrases, de marcas do discurso reportado e de citações, para uso em textos de divulgação de estudos e pesquisas.",
+  "EM13LP36": "Analisar os interesses que movem o campo jornalístico, os impactos das novas tecnologias digitais de informação e comunicação e da Web 2.0 no campo e as condições que fazem da informação uma mercadoria e da checagem de informação uma prática (e um serviço) essencial, adotando atitude analítica e crítica diante dos textos jornalísticos.",
+  "EM13LP37": "Conhecer e analisar diferentes projetos editorias - institucionais, privados, públicos, financiados, independentes etc. -, de forma a ampliar o repertório de escolhas possíveis de fontes de informação e opinião, reconhecendo o papel da mídia plural para a consolidação da democracia.",
+  "EM13LP40": "Analisar o fenômeno da pós-verdade - discutindo as condições e os mecanismos de disseminação de fake news e também exemplos, causas e consequências desse fenômeno e da prevalência de crenças e opiniões sobre fatos -, de forma a adotar atitude crítica em relação ao fenômeno e desenvolver uma postura flexível que permita rever crenças e opiniões quando fatos apurados as contradisserem.",
+  "EM13LP42": "Acompanhar, analisar e discutir a cobertura da mídia diante de acontecimentos e questões de relevância social, local e global, comparando diferentes enfoques e perspectivas, por meio do uso de ferramentas de curadoria (como agregadores de conteúdo) e da consulta a serviços e fontes de checagem e curadoria de informação, de forma a aprofundar o entendimento sobre um determinado fato ou questão, identificar o enfoque preponderante da mídia e manter-se implicado, de forma crítica, com os fatos e as questões que afetam a coletividade.",
+  "EM13LP05": "Analisar, em textos argumentativos, os posicionamentos assumidos, os movimentos argumentativos (sustentação, refutação/contra-argumentação e negociação) e os argumentos utilizados para sustentá-los, para avaliar sua força e eficácia, e posicionar-se criticamente diante da questão discutida e/ou dos argumentos utilizados, recorrendo aos mecanismos linguísticos necessários.",
+  "EM13LP17": "Elaborar roteiros para a produção de vídeos variados (vlog, videoclipe, videominuto, documentário etc.), apresentações teatrais, narrativas multimídia e transmídia, podcasts, playlists comentadas etc., para ampliar as possibilidades de produção de sentidos e engajar-se em práticas autorais e coletivas.",
+  "EM13LP19": "Apresentar-se por meio de textos multimodais diversos (perfis variados, gifs biográficos, biodata, currículo web, videocurrículo etc.) e de ferramentas digitais (ferramenta de gif, wiki, site etc.), para falar de si mesmo de formas variadas, considerando diferentes situações e objetivos.",
+  "EM13LP22": "Construir e/ou atualizar, de forma colaborativa, registros dinâmicos (mapas, wiki etc.) de profissões e ocupações de seu interesse (áreas de atuação, dados sobre formação, fazeres, produções, depoimentos de profissionais etc.) que possibilitem vislumbrar trajetórias pessoais e profissionais.",
+  "EM13LP27": "Engajar-se na busca de solução para problemas que envolvam a coletividade, denunciando o desrespeito a direitos, organizando e/ou participando de discussões, campanhas e debates, produzindo textos reivindicatórios, normativos, entre outras possibilidades, como forma de fomentar os princípios democráticos e uma atuação pautada pela ética da responsabilidade, pelo consumo consciente e pela consciência socioambiental.",
+  "EM13LP28": "Organizar situações de estudo e utilizar procedimentos e estratégias de leitura adequados aos objetivos e à natureza do conhecimento em questão.",
+  "EM13LP33": "Selecionar, elaborar e utilizar instrumentos de coleta de dados e informações (questionários, enquetes, mapeamentos, opinários) e de tratamento e análise dos conteúdos obtidos, que atendam adequadamente a diferentes objetivos de pesquisa.",
+  "EM13LP34": "Produzir textos para a divulgação do conhecimento e de resultados de levantamentos e pesquisas - texto monográfico, ensaio, artigo de divulgação científica, verbete de enciclopédia (colaborativa ou não), infográfico (estático ou animado), relato de experimento, relatório, relatório multimidiático de campo, reportagem científica, podcast ou vlog científico, apresentações orais, seminários, comunicações em mesas redondas, mapas dinâmicos etc. -, considerando o contexto de produção e utilizando os conhecimentos sobre os gêneros de divulgação científica, de forma a engajar-se em processos significativos de socialização e divulgação do conhecimento.",
+  "EM13LP47": "Participar de eventos (saraus, competições orais, audições, mostras, festivais, feiras culturais e literárias, rodas e clubes de leitura, cooperativas culturais, jograis, repentes, slams etc.), inclusive para socializar obras da própria autoria (poemas, contos e suas variedades, roteiros e microrroteiros, videominutos, playlists comentadas de música etc.) e/ou interpretar obras de outros, inserindo-se nas diferentes práticas culturais de seu tempo.",
+  "EM13LP51": "Selecionar obras do repertório artístico-literário contemporâneo à disposição segundo suas predileções, de modo a constituir um acervo pessoal e dele se apropriar para se inserir e intervir com autonomia e criticidade no meio cultural.",
+  "EM13LP09": "Comparar o tratamento dado pela gramática tradicional e pelas gramáticas de uso contemporâneas em relação a diferentes tópicos gramaticais, de forma a perceber as diferenças de abordagem e o fenômeno da variação linguística e analisar motivações que levam ao predomínio do ensino da norma-padrão na escola.",
+  "EM13LP10": "Analisar o fenômeno da variação linguística, em seus diferentes níveis (variações fonéticofonológica, lexical, sintática, semântica e estilístico-pragmática) e em suas diferentes dimensões (regional, histórica, social, situacional, ocupacional, etária etc.), de forma a ampliar a compreensão sobre a natureza viva e dinâmica da língua e sobre o fenômeno da constituição de variedades linguísticas de prestígio e estigmatizadas, e a fundamentar o respeito às variedades linguísticas e o combate a preconceitos linguísticos.",
+  "EM13LP46": "Compartilhar sentidos construídos na leitura/escuta de textos literários, percebendo diferenças e eventuais tensões entre as formas pessoais e as coletivas de apreensão desses textos, para exercitar o diálogo cultural e aguçar a perspectiva crítica.",
+  "EM13LP50": "Analisar relações intertextuais e interdiscursivas entre obras de diferentes autores e gêneros literários de um mesmo momento histórico e de momentos históricos diversos, explorando os modos como a literatura e as artes em geral se constituem, dialogam e se retroalimentam.",
+  "EM13LP11": "Fazer curadoria de informação, tendo em vista diferentes propósitos e projetos discursivos.",
+  "EM13LP18": "Utilizar softwares de edição de textos, fotos, vídeos e áudio, além de ferramentas e ambientes colaborativos para criar textos e produções multissemióticas com finalidades diversas, explorando os recursos e efeitos disponíveis e apropriando-se de práticas colaborativas de escrita, de construção coletiva do conhecimento e de desenvolvimento de projetos.",
+  "EM13LP30": "Realizar pesquisas de diferentes tipos (bibliográfica, de campo, experimento científico, levantamento de dados etc.), usando fontes abertas e confiáveis, registrando o processo e comunicando os resultados, tendo em vista os objetivos pretendidos e demais elementos do contexto de produção, como forma de compreender como o conhecimento científico é produzido e apropriar-se dos procedimentos e dos gêneros textuais envolvidos na realização de pesquisas.",
+  "EM13LP32": "Selecionar informações e dados necessários para uma dada pesquisa (sem excedê-los) em diferentes fontes (orais, impressas, digitais etc.) e comparar autonomamente esses conteúdos, levando em conta seus contextos de produção, referências e índices de confiabilidade, e percebendo coincidências, complementaridades, contradições, erros ou imprecisões conceituais e de dados, de forma a compreender e posicionar-se criticamente sobre esses conteúdos e estabelecer recortes precisos.",
+  "EM13LP35": "Utilizar adequadamente ferramentas de apoio a apresentações orais, escolhendo e usando tipos e tamanhos de fontes que permitam boa visualização, topicalizando e/ou organizando o conteúdo em itens, inserindo de forma adequada imagens, gráficos, tabelas, formas e elementos gráficos, dimensionando a quantidade texto e imagem por slide e usando, de forma harmônica, recursos (efeitos de transição, slides mestres, layouts personalizados, gravação de áudios em slides etc.).",
+  "EM13LP39": "Usar procedimentos de checagem de fatos noticiados e fotos publicadas (verificar/avaliar veículo, fonte, data e local da publicação, autoria, URL, formatação; comparar diferentes fontes; consultar ferramentas e sites checadores etc.), de forma a combater a proliferação de notícias falsas (fake news).",
+  "EM13LP41": "Analisar os processos humanos e automáticos de curadoria que operam nas redes sociais e outros domínios da internet, comparando os feeds de diferentes páginas de redes sociais e discutindo os efeitos desses modelos de curadoria, de forma a ampliar as possibilidades de trato com o diferente e minimizar o efeito bolha e a manipulação de terceiros.",
+  "EM13LP43": "Atuar de forma fundamentada, ética e crítica na produção e no compartilhamento de comentários, textos noticiosos e de opinião, memes, gifs, remixes variados etc. em redes sociais ou outros ambientes digitais."
+ },
+ "entradas": [
+  {
+   "c": "EM13LGG101",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade em aproximação progressiva e compreensiva de discursos por meio de procedimentos de análise das situações em que foi produzida e veiculada, dos usos de recursos multissemióticos e de seus efeitos de sentidos, que pautem escolhas e posturas de apreciação e réplica frente aos discursos que circulam, nos diferentes campos de atuação.",
+   "o": "a) Linguagens, seus diálogos e práticas culturais (situações reais de comunicação – linguagem formal, informal); b) Multimídia; c) Contextos e práticas; d) Sistemas de linguagem (verbal, não verbal); e) Processos de criação (escolha do gênero/tipo textual, sujeitos de um texto, finalidade deste texto); f) Meios de produção e difusão (suporte para circulação e divulgação)."
+  },
+  {
+   "c": "EM13LGG101",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela problematização do contexto cultural originário, da evolução histórica e da influência dos marcadores sociais (classe, gênero, idade, origem cultural etc.) na experimentação e nos significados atribuídos às práticas corporais.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; c) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade."
+  },
+  {
+   "c": "EM13LGG101",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade pela vivência, análise e significação de diferentes modos pelos quais processos e produções artísticas chegam a público, seja por meio de locais consagrados à apreciação, seja considerando as possibilidades e alternativas advindas com as tecnologias e as mediações das indústrias culturais. Levar os jovens a compreensão da leitura visual, elaborar seus próprios meios de registros, e desenvolver um pensamento autônomo, atitudes de responsabilidade de construção e conservação.",
+   "o": "Patrimônio cultural e manifestações culturais regionais (Apreciação do patrimônio Material e Imaterial)."
+  },
+  {
+   "c": "EM13LGG102",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade pela análise de posicionamentos assumidos ao redor do mundo sobre determinado tema, ampliando a territorialidade do pensamento dos jovens e de suas possibilidades de práticas de linguagem para além de suas realidades imediatas.",
+   "o": "a) Relação entre textos (intertextualidade: tradução), atos de linguagem e discursos; b) Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.); c) Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem). d) Planejamento, produção e edição de textos orais, escritos e multimodais."
+  },
+  {
+   "c": "EM13LGG102",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela análise crítica de práticas corporais, com identificação de preconceitos e estereótipos associados a grupos minoritários, interesses econômicos, ideológicos e políticos.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; c) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade."
+  },
+  {
+   "c": "EM13LGG102",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade pela fruição, com foco na problematização de como distintos grupos sociais e seus valores (em especial, os minoritários) são tematizados nas diferentes linguagens artísticas (músicas, danças, pinturas, linguagens, vestimentas...).",
+   "o": "Diversidades culturais; Valores na arte, uso das representações corporal artísticas."
+  },
+  {
+   "c": "EM13LGG103",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade pela análise de usos de recursos da língua na construção de sentidos.",
+   "o": "a) Regularidades de composição e estilo em diferentes gêneros textuais; b) Conhecimentos linguísticos (morfológicos, sintáticos), paralinguísticos (entonação, ritmo etc.), multissemióticos (imagens etc.) e cinésicos (postura corporal, gestualidade etc.); c) Apreciação e curadoria."
+  },
+  {
+   "c": "EM13LGG103",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela experimentação de práticas corporais, com análise e reflexão sobre como gestos são construídos e como podem ser aprendidos, considerando aspectos biomecânicos, fisiológicos, expressivos e de suas relações com os diferentes contextos das práticas corporais.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras."
+  },
+  {
+   "c": "EM13LGG103",
+   "k": "ART",
+   "d": "",
+   "o": "Identificação dos signos, linguagens seus diálogos e práticas culturais; Multimídias; Fruição e apreciação de obras de arte em diferentes linguagens artísticas, observando contextos, elementos, materialidade e processos criativos. A arte contribui no desenvolvimento dessa habilidade em experiências de fruição e apreciação de obras em diferentes linguagens artísticas, observando contextos, elementos, materialidades e processos criativos. Levar os jovens a construie e analisar seu percurso de conhecimento em Arte (componente curricular) de forma coletiva, podendo ser com a metodologia da sala de aula invertida ou rotação."
+  },
+  {
+   "c": "EM13LGG104",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade pela mobilização de conhecimentos sobre as etapas da produção textual, com articulação de recursos verbais e não verbais, consideração de contextos de produção, circulação e recepção, para exercer a autoria, individual ou coletivamente, em práticas sociais claramente situadas, ampliando o repertório de vivências discursivas significativas.",
+   "o": "a) Planejamento, produção e edição de textos orais, escritos e multimodais (charge, história em quadrinhos, placas, outdoors, cartuns, linguagem cinematográfica, etc); b) Interpretação Textual; c) Apreciação e réplica."
+  },
+  {
+   "c": "EM13LGG104",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela ampliação de possibilidades de se movimentar, por meio da experimentação de gestos das diferentes práticas corporais e dos conhecimentos históricos, científicos e culturais que as embasam.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas: atividades recreativas."
+  },
+  {
+   "c": "EM13LGG104",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade pela mobilização de conhecimentos e experiências com os elementos constitutivos das linguagens artísticas em processos de criação autorais, especialmente coletivos e colaborativos, com mais autonomia dos jovens. Produzir projetos coletivos, organizando numa linha do tempo as obras de arte, suas linguagens e contruir novas propostas através da experimentação de objetos.",
+   "o": "Fruição e apreciação de obras de arte em diferentes linguagens artísticas, observando contextos, elementos, materialidade e processos criativos."
+  },
+  {
+   "c": "EM13LGG105",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade propondo: análise de diferentes atos de linguagem, que se utilizam de recursos variados das linguagens verbal (multissemioses), em diálogo com as culturas juvenis; propostas de produções que reflitam o protagonismo em novos modos de participação e intervenção social; mobilização de conhecimentos sobre gêneros multissemióticos, processos de remidiação (recombinação de uma forma de linguagem para outra ou de uma mídia para outra), multi e transmídia, como produções de fãs (fan vid, fanfic, fan art, machinema etc.), reportagens multimidiáticas (que podem ser criadas pela produção conjunta de uma reportagem, um documentário, entrevistas em áudio), desenvolvimento de projetos sociais e manifestação culturais, integrando eventos esportivos, musicais, gincanas, saraus e intervenção urbana, trabalhando de forma interdisciplinar e transdisciplinar.",
+   "o": "a) Apreciação de textos com processos de remidiação e de produções multimídia e transmídia; b) Intertextualidade e interdiscursividade; c) Processos de produção textual com remidiação; d) Processos de produção textual multimídia ou transmídia."
+  },
+  {
+   "c": "EM13LGG105",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade ao propor a análise de questões controversas nas práticas da cultura corporal, com investigação de diferentes pontos de vista, para formação de opinião sustentada em argumentos.",
+   "o": "Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes: Estética: padrões corporais, a valorização na sociedade e pela mídia, uso de anabolizantes e drogas em geral, cirurgias plásticas, implantes, anorexia, bulimia e vigorexia, outros;"
+  },
+  {
+   "c": "EM13LGG105",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade propondo: análise de diferentes atos de linguagem, que se utilizam de recursos variados das linguagens verbal, artística e corporal (multissemioses), em produções culturais utilizam de diferentes mídias integradas, em diálogo com as culturas juvenis; propostas de produções que reflitam o protagonismo em novos modos de participação e intervenção social; mobilização de conhecimentos sobre gêneros multissemióticos, processos de remidiação, multi e transmídia, como produções de fãs (fan vid, fanfic, fan art, machinema etc.), reportagens multimidiáticas (que podem ser criadas pela produção conjunta de uma reportagem, um documentário, entrevistas em áudio), desenvolvimento de projetos sociais e manifestação culturais, integrando eventos esportivos, musicais, gincanas, saraus e intervenção urbana, trabalhando de forma interdisciplinar e transdisciplinar.",
+   "o": "Fruição e apreciação de obras de arte em diferentes linguagens artísticas, observando contextos, elementos, materialidade e processos criativos."
+  },
+  {
+   "c": "EM13LGG201",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade pela participação em práticas de linguagem pautada na consciência sobre as escolhas discursivas (lexical, nível de formalidade, postura e gestualidade)..",
+   "o": "a) Processos de produção e criação de textos e atos de linguagem; b) Inglês formal e informal."
+  },
+  {
+   "c": "EM13LGG201",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela experimentação de práticas corporais de diferentes grupos culturais, com problematização de identidades e valores, bem como pela escolha consciente de gestos e expressões verbais condizentes com o respeito à diversidade, aos objetivos e ao contexto de interação.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas: atividades de aventura (Esportes radicais urbanos)."
+  },
+  {
+   "c": "EM13LGG201",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade pela experimentação de linguagens artísticas (teatro, música, dança, artes visuais, audiovisual, circo etc.), reconhecendo seu desenvolvimento histórico e cultural, seu papel nos processos identitários das juventudes, seu potencial e sua legitimidade para expressar ideias e atuar nos mais diversos contextos da vida social. Selecionar recursos expressivos (linguísticos, gestuais, artísticos, multissemióticos) para produzir discursos e atos de linguagem. e Tecnologia.",
+   "o": "Manifestações típicas folclóricas da Região Norte e do Tocantins; Apreciação, experimentação de linguagens artísticas (artes visuais, audiovisuais, teatro, música, dança)."
+  },
+  {
+   "c": "EM13LGG202",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade em análises de marcas discursivas, nas diferentes práticas de linguagem, que indiquem posicionamentos que possam ser confrontados.",
+   "o": "a) Processos de produção e criação de textos e atos de linguagem; b) conjunções; advérbios; interjeições; d) Apreciação, curadoria e réplica."
+  },
+  {
+   "c": "EM13LGG202",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela análise de processos de valorização/desvalorização das práticas corporais, em função de marcadores sociais como classe social, gênero, local de origem, etnia e religião.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; c) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade."
+  },
+  {
+   "c": "EM13LGG202",
+   "k": "ART",
+   "d": "",
+   "o": ""
+  },
+  {
+   "c": "EM13LGG202",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade pela análise de contextos históricos e culturais de produção das linguagens artísticas, das visões de mundo que carregam e dos processos de disputa de sentidos, relativos às produções artísticas de diferentes grupos culturais. Buscar os registros da cultura local, produções artísiticas de diferentes grupos, suas influências e como eles, os estudantes se posicionam dentro desse universo.",
+   "o": "Grupos Culturais, contextos e identidade, apreciação, experimentação e réplicas."
+  },
+  {
+   "c": "EM13LGG203",
+   "k": "ING",
+   "d": "",
+   "o": "Planejamento, produção e edição de textos orais, escritos e multissemióticos."
+  },
+  {
+   "c": "EM13LGG203",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela análise da disputa entre discursos opressores e de discursos e processos pela busca de legitimidade das práticas corporais de grupos minoritários, como as mulheres, os pobres, os negros, os indígenas, os imigrantes, habitantes das periferias, entre outros.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; c) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade."
+  },
+  {
+   "c": "EM13LGG203",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade pela análise de tensões entre o novo e a tradição, de diferentes concepções de originalidade e autenticidade do fazer artístico e de formas e processos com que instâncias e agentes conferem prestígio e legitimidade a determinados artistas e obras. Posicionar-se diante das criações de expressões artísticas dos grupos sociais que são excluídos do reconhecimento social, como tornar-los inseridos e valorizados, legitimação destas expressões.",
+   "o": "Grupos urbanos, novas formas de expressões; Manifestações restritas a pequenas localidades; Experienciar e apropriar de diversos tipos de movimentos culturais. Propor a análise do novo e as tradições, em suas diferentes concepções de criação e autenticidade do fazer artísticos."
+  },
+  {
+   "c": "EM13LGG204",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade pela construção de conhecimentos sobre operadores argumentativos e modalizadores, bem como pela análise e uso desses recursos em práticas de linguagem que visem à produção de deliberação ou consenso.",
+   "o": "a) Diálogos e argumentações sobre temas diversos em inglês b) Operadores argumentativos de: adição; explicação; condição; comparação; finalidade; proporção; alternância; consequência; explicação; conclusão; oposição."
+  },
+  {
+   "c": "EM13LGG204",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela problematização de direitos nas práticas corporais, pela experimentação de modos inclusivos em práticas corporais e pela análise, produção e circulação de discursos sobre essas práticas, considerando valores democráticos.",
+   "o": "a)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas: atividades recreativas, atividades circenses, outras."
+  },
+  {
+   "c": "EM13LGG204",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade em processos de criação colaborativos com: experimentação de práticas artísticas de diferentes grupos; investigação de questões, conflitos e situações de desrespeito à dignidade da pessoa humana e às liberdades garantidas pelo Estado Democrático de Direito; e problematização da esfera artística como espaço de discussão de temas de sua época. âmbito local, regional e global.",
+   "o": "Processos de criação seus aspectos éticos e estéticos; Práticas inclusivas nas práticas da cultura corporal; Contextos de produções das artes visuais dentro das particularidades locais."
+  },
+  {
+   "c": "EM13LGG301",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade em processos de produção de textos e atos de linguagem, de autoria individual e coletiva, que mobilizem conhecimentos sobre recursos linguísticos e multissemióticos, em usos reflexivos, de acordo com efeitos de sentidos desejados. Produzir textos. Leitura e escrita.",
+   "o": "a) Gêneros textuais; b) Consideração do contexto de produção, circulação e recepção de textos e atos de linguagem (Assunto tratado no texto, interlocutor visado, ou seja, sujeito ou público a quem o texto se dirige e que pode ser conhecido ou presumido, objetivo a ser atingido, propósito que motiva a produção, gênero textual próprio da situação de comunicação, suporte em que o texto vai ser veiculado: jornal mural, jornal da escola, rádio comunitária, revista em quadrinhos, panfleto etc. e, até mesmo, ao tom a ser dispensado ao texto: formal, informal, engraçado, irônico, carinhoso etc.); c) Processo de produção de textos linguísticos e multissemióticos."
+  },
+  {
+   "c": "EM13LGG301",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela experimentação de práticas corporais de diferentes matrizes culturais pautada: pelo respeito ao outro; pela colaboração com inclusão; e pela análise de relações entre práticas corporais, consumo, meioambiente e Direitos Humanos.).",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas: dança, ginástica em geral; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas: atividades cênicas, atividades circenses, outras. ("
+  },
+  {
+   "c": "EM13LGG301",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade em processos de apreciação e criação com suas diferentes linguagens (dança, teatro, música, artes visuais etc.), que demandem: mobilização de conhecimentos sobre elementos constitutivos das linguagens artísticas; escolhas; e tomada de decisões, considerando intencionalidades e contextos culturais. Exercitar a escuta e o diálogo na autoria coletiva.",
+   "o": "Compreensão de espaço, luz e contexto (produções seus elementos), experimentações de elementos midiáticos, como fanfics e fanclipes."
+  },
+  {
+   "c": "EM13LGG302",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade em propostas de apreciação de textos linguísticos e multissemióticos, de gêneros dos diferentes campos de atuação, que veiculem diferentes visões de mundo. Leitura.",
+   "o": "a) Análise do contexto de produção, circulação e recepção de textos e atos de linguagem; b) Recursos das diferentes linguagens e produção de sentidos (Figuras de Linguagem); c) Interpretação de textos."
+  },
+  {
+   "c": "EM13LGG302",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela experimentação de práticas da cultura corporal, com reflexão sobre suas origens, desenvolvimento histórico e cultural, e análise dos valores e visões de mundo que expressam.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas: esportes."
+  },
+  {
+   "c": "EM13LGG302",
+   "k": "ART",
+   "d": "",
+   "o": "Produções (Artes Visuais, Dança, Música, Teatro e Artes Integradas) com posicionamentos críticos; Possibilita a construção intencional e informada do Projeto de Vida. Arte contribui no desenvolvimento dessa habilidade pela apreciação de diferentes propostas de arte, com problematização das visões de mundo a que remetem e pela produção de posicionamentos críticos, com experimentação e criação por meio das diferentes linguagens artísticas (Artes Visuais, Dança, Música, Teatro e Artes Integradas)."
+  },
+  {
+   "c": "EM13LGG303",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade em propostas de apreciação de textos linguísticos e multissemióticos, de gêneros dos diferentes campos de atuação, que veiculem diferentes visões de mundo e posicionando o entendimento alcançado. Esse desenvolvimento implica: análise de visões de mundo que os textos veiculam e mobilização de conhecimentos de gêneros e estratégias de argumentação para então se posicionar.",
+   "o": "a) Leitura de textos argumentativos e de opinião (Apreciação e Réplica). b) Marcadores do discurso; c) produção de resenhas, comentário de leitor, etc. d) Diálogos e debates em inglês."
+  },
+  {
+   "c": "EM13LGG303",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade ao propor a análise de questões controversas nas práticas da cultura corporal, com investigação de diferentes pontos de vista, para formação de opinião sustentada em argumentos.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; c) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade."
+  },
+  {
+   "c": "EM13LGG303",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade por meio da apreciação de obras que problematizem, expressem pontos de vista acerca de temas polêmicos e de relevância social, com mobilização de repertório artístico-cultural, abertura e interesse por distintas matrizes estéticas e culturais.",
+   "o": "Investigação de propostas artísticoculturais dialogando com os processos de criação e expressões contemporâneas."
+  },
+  {
+   "c": "EM13LGG304",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade em propostas de apreciação de textos linguísticos e multissemióticos, de gêneros dos diferentes campos de atuação, que veiculem diferentes visões de mundo e posicionamento.",
+   "o": "a) Leitura e interpretação de textos que abordem temas relativos aos Direitos humanos, socioambientais, saúde e consumo responsável. b) Marcadores do discurso; c) produção de resenhas, resumo, etc. d) Expressões de opinião e fato. e) Diálogos e debates em inglês sobre os textos abordados."
+  },
+  {
+   "c": "EM13LGG304",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade por meio da análise de políticas de lazer e esporte, da investigação de sua eficácia nos contextos locais e de processos de discussão e intervenção pela garantia do direito ao lazer ativo e à prática de cultura corporal, com mobilização de conhecimentos de gêneros e práticas próprias para isso.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; c) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade."
+  },
+  {
+   "c": "EM13LGG304",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade pela apreciação, vivência e experimentação de propostas de arte como intervenção, bem como pela apropriação criativa de processos artísticos na produção de propostas de arte como intervenção. Esse desenvolvimento implica mobilização de repertório artístico-cultural e tratamento estético e ético de temas como Direitos Humanos e sustentabilidade.",
+   "o": "Instalações artísticas, construções de práticas corporal coletivas em ambientes que levem a interação, obra e público. Construções de práticas corporal coletivas; Instalações artísticas em ambientes que levem a interação, obra e público."
+  },
+  {
+   "c": "EM13LGG305",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela análise de modos de participar da elaboração de políticas públicas e de atividades comunitárias que favoreçam a experimentação das práticas da cultura corporal e o debate público quanto ao direito ao lazer e ao esporte, na perspectiva da defesa de uma cidadania plena, com processos inclusivos.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; c) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade."
+  },
+  {
+   "c": "EM13LGG305",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade em processos de investigação de propostas artístico-culturais que dialoguem com questões e desafios contemporâneos e em processos de criação que problematizem essas temáticas, em produções autorais individuais e coletivas.",
+   "o": "Expressões e linguagens contemporâneas;"
+  },
+  {
+   "c": "EM13LGG401",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade por meio de atividades de problematização e análise de condições sociais, históricas, geográficas e culturais em que se realizam discursos e atos de linguagem, dos diferentes campos de atuação, com foco no uso das variedades da língua. O desenvolvimento dessa habilidade implica relacionar contextos e usos da língua, visando à compreensão das línguas como dinâmicas, heterogêneas e variáveis, e relacionar usos da língua a grupos específicos (regionais, sociais, entre outros), com compreensão de como a língua é parte dos processos identitários de seus falantes. Arte - Apreciação de produção artística, local, regional, nacional e mundial sendo essa sonora; de imagens, corporal, realizando análise crítica e estética. Trabalhando assim: Elementos da Linguagem; Materialidades; Mediação Cultural; Patrimônio Cultural; Processos de Criação; Saberes Estéticos e Culturais.",
+   "o": "a) Condições de produção, circulação e recepção de discursos e atos de linguagem; b) Variação linguística histórica (inglês arcaico e inglês moderno – variação linguística diacrônica), regional (truck / lorry – variação linguística diatópica), social (as gírias, os jargões e o linguajar caipira e outros - variação linguística diastrática) e de situação comunicativa (formal / informal – variação linguística diafásica)."
+  },
+  {
+   "c": "EM13LGG402",
+   "k": "ING",
+   "d": "A Língua Inglesa contribui no desenvolvimento dessa habilidade em práticas de produção de textos linguísticos e multissemióticos e de performances, com foco na análise do contexto de produção, circulação e recepção, para escolhas de recursos das variedades da língua com intencionalidade, adequação e pertinência. O desenvolvimento dessa habilidade implica a mobilização de conhecimentos sobre a variação linguística, a problematização de escolhas linguísticas e o engajamento colaborativo em processos de interação, com postura de respeito ao uso das diferentes variedades e registros e compreensão do que expressam de valores e pertenças de seus falantes. Arte: Contexto de produção artística, experência estética e recepção à produção local. Possibilitando assim a experiência de apreciação e respeito a arte que não circula na mídia.",
+   "o": "a) Contexto de produção, circulação e recepção de textos. b) Variação de estilo (os dialetos e registros ou estilos - dialeto regional ou territorial, exemplo: have got – registro: grau de formalidade do texto); c) Adequação e pertinência; d) Apreciação e réplica."
+  },
+  {
+   "c": "EM13LGG403",
+   "k": "ING",
+   "d": "",
+   "o": "a) Práticas de linguagem (produção de textos orais, escritos e multissemióticos) - Interagir em inglês em contextos diversos, presenciais ou virtuais, síncronos ou não; b) Condições de produção, circulação e recepção de discursos e atos de linguagem; c) Produção de textos linguísticos e multissemióticos - Participar de práticas translíngues, como traduzir uma conversa para alguém, produzir uma paródia de uma canção, resumir as ideias de um texto ou tecer um comentário em português sobre um texto ou vídeo em inglês (ou vice-versa); d) Experimentação de ferramentas e de processos multimidiáticos na produção de textos ou atos de linguagem em inglês; e) Entonação, expressividade e gestualidade. Arte - Navegar em produções artísticas em territórios multiculturais realizando assim a vivência e integração com produções artísticas de outras localidades. Trabalhando assim: Elementos da Linguagem; Materialidades; Processos de Criação; Saberes Estéticos e Culturais."
+  },
+  {
+   "c": "EM13LGG501",
+   "k": "ING",
+   "d": "",
+   "o": "Planejamento e produção de textos escritos e multissemióticos."
+  },
+  {
+   "c": "EM13LGG501",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade pela seleção e experimentação de gestos de diferentes práticas corporais de forma reflexiva, autoral, investigativa e criativa.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; c) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade."
+  },
+  {
+   "c": "EM13LGG501",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade pela análise, experimentação e compreensão das dimensões estética e ética de gestos nas diferentes práticas artístico-corporais, como na dança, no teatro e nas performances.",
+   "o": "A dança como forma de expressão; Experimentação de performance como meio de comunicar suas preferências e valores; Teatro prática contemporânea."
+  },
+  {
+   "c": "EM13LGG502",
+   "k": "ING",
+   "d": "",
+   "o": "Planejamento e produção de textos escritos e multissemióticos."
+  },
+  {
+   "c": "EM13LGG502",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade por procedimentos de análise de preconceitos, estereótipos e situações de injustiça no acesso e/ou na divulgação de práticas corporais, em discursos que circulam em diferentes esferas e mídias, e pela experimentação reflexiva de práticas, com postura de combate a preconceitos e estereótipos.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; c) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade."
+  },
+  {
+   "c": "EM13LGG502",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade pela análise de construções sociais, históricas e culturais associadas à dança e pela experimentação de processos criativos que problematizem preconceitos, como preconceito de classe social, gênero e raça associados à marginalização de determinados estilos de dança.",
+   "o": "História da dança, construções sociais, históricas e culturais; Construções de formas de expressão pelo movimento rítmico corporal."
+  },
+  {
+   "c": "EM13LGG503",
+   "k": "ING",
+   "d": "",
+   "o": "Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem)."
+  },
+  {
+   "c": "EM13LGG503",
+   "k": "EDF",
+   "d": "",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais institucionalizadas como: esportes, danças, ginásticas em geral, lutas, outras; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-institucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; c) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade. A Educação Física desenvolve essa habilidade pela promoção de práticas corporais ajustadas às necessidades e interesses juvenis, que permitam processos de identificação, significação e escolhas, conforme os Projetos de Vida. Esse desenvolvimento implica expressar identidades, favorecer a integração com a comunidade, engajar-se pelo lazer e estabelecer relações entre práticas corporais e saúde."
+  },
+  {
+   "c": "EM13LGG601",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade por meio de atividades de investigação, apreciação e discussão do patrimônio artístico, a partir das danças. Esse desenvolvimento implica: práticas com bens materiais (obras urbanísticas e artísticas) e imateriais (saberes da cultura popular, dança, músicas, artes e artesanatos etc.), significativos em termos locais e globais; análise dos atores e processos de disputa de legitimidade e sentido; e reflexão sobre as diferentes valorizações contempladas no patrimônio e sobre o que elas refletem a respeito do protagonismo e de grupos, seus valores e pertenças.",
+   "o": "a)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais intitucionalizadas: danças, ginásticas em geral, lutas; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-intitucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras."
+  },
+  {
+   "c": "EM13LGG601",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade por meio de atividades de investigação, apreciação e discussão do patrimônio artístico. Esse desenvolvimento implica: práticas com bens materiais (obras urbanísticas e artísticas) e imateriais (saberes da cultura popular, dança, músicas, artes e artesanatos etc.), significativos em termos locais e globais; análise dos atores e processos de disputa de legitimidade e sentido; e reflexão sobre as diferentes valorizações contempladas no patrimônio e sobre o que elas refletem a respeito do protagonismo e de grupos, seus valores e pertenças.",
+   "o": "Arquitetura e seus elementos de produções do patrimônio artístico e social; Fotografia registros e construção de acervos; Saberes e fazeres de comunidade, (causos, textos e produções artísticas)."
+  },
+  {
+   "c": "EM13LGG602",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade em atividades de investigação e fruição de obras artísticas de diferentes linguagens, épocas, lugares e matrizes culturais. Implica: mobilização de repertórios pessoais; abertura para experiências de fruição de diferentes propostas artísticas; análise dos contextos de produção, circulação e recepção de manifestações artísticas; significação das relações com a Arte nas formas de ver, sentir, imaginar, criar e de dar forma às experiências pessoais e coletivas.",
+   "o": "a) Vivências e análises de práticas corporais intitucionalizadas: danças, ginásticas em geral, lutas; b)Vivências e análises de práticas corporais não-intitucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras."
+  },
+  {
+   "c": "EM13LGG602",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade em atividades de investigação e fruição de obras artísticas de diferentes linguagens, épocas, lugares e matrizes culturais. Implica: mobilização de repertórios pessoais; abertura para experiências de fruição de diferentes propostas artísticas; análise dos contextos de produção, circulação e recepção de manifestações artísticas; significação das relações com a Arte nas formas de ver, sentir, imaginar, criar e de dar forma às experiências pessoais e coletivas.",
+   "o": "Formação cultural do estado do Tocantins; As etnias que compõem a identidade cultural nas artes, na culinária e dialetos. Construção de acervos digitais, com elementos e informações da comunidade local; Matrizes estéticas e culturais (analisar, sentir, experimentar, contextualizar, reproduzir,...)"
+  },
+  {
+   "c": "EM13LGG603",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade em atividades de expressão e criação, com experimentação das diferentes linguagens que a integram. Para a progressão curricular, o desenvolvimento dessa habilidade implica variar propostas que mobilizem: conhecimentos sobre as diferentes linguagens, seus recursos e materialidades; discussão de temas, conceitos, questões e formas que sejam significativas para os processos de criação; discussão e negociação de contextos de produção, circulação e recepção de produções; interfaces entre a autoria individual e a coletiva, com abertura e respeito pelas diferentes perspectivas e busca pela composição conjunta; e diálogos com outras realizações artísticas de repertórios das experiências estudantis de fruição e experimentação.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais intitucionalizadas: danças, ginásticas em geral, lutas; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-intitucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras."
+  },
+  {
+   "c": "EM13LGG603",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade em atividades de expressão e criação, com experimentação das diferentes linguagens que a integram. Para a progressão curricular, o desenvolvimento dessa habilidade implica variar propostas que mobilizem: conhecimentos sobre as diferentes linguagens, seus recursos e materialidades; discussão de temas, conceitos, questões e formas que sejam significativas para os processos de criação; discussão e negociação de contextos de produção, circulação e recepção de produções; interfaces entre a autoria individual e a coletiva, com abertura e respeito pelas diferentes perspectivas e busca pela composição conjunta; e diálogos com outras realizações artísticas de repertórios das experiências estudantis de fruição e experimentação.",
+   "o": "Experimentação de linguagens e materialidades artísticas."
+  },
+  {
+   "c": "EM13LGG604",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade em propostas de investigação, pesquisa, experimentação de diferentes práticas artísticas e análise de seus contextos de produção, circulação e recepção. Esse desenvolvimento implica: mobilização de conhecimentos sobre as diferentes linguagens da Arte (artes visuais, dança, música, teatro), suas concepções, materialidades e processos em diferentes momentos históricos; investigação de como práticas artísticas confirmam, questionam ou inovam estéticas e estilos de época; e compreensão da dinamicidade da Arte, modos de produção, circulação e recepção, conforme a dinâmica social e as intencionalidades de seus atores.",
+   "o": "a) Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais intitucionalizadas: danças, ginásticas em geral, lutas; b)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-intitucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras."
+  },
+  {
+   "c": "EM13LGG604",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade em propostas de investigação, pesquisa, experimentação de diferentes práticas artísticas e análise de seus contextos de produção, circulação e recepção. Esse desenvolvimento implica: mobilização de conhecimentos sobre as diferentes linguagens da Arte (artes visuais, dança, música, teatro), suas concepções, materialidades e processos em diferentes momentos históricos; investigação de como práticas artísticas confirmam, questionam ou inovam estéticas e estilos de época; e compreensão da dinamicidade da Arte, modos de produção, circulação e recepção, conforme a dinâmica social e as intencionalidades de seus atores.",
+   "o": "Influências da cultura da região Norte na formação da cultura do Tocantins; Formação da identidade cultural e seus principais representantes."
+  },
+  {
+   "c": "EM13LGG701",
+   "k": "ING",
+   "d": "",
+   "o": "A língua Inglesa contribui com essa habilidade ao desenvolver atividades utilizando as mídias e as ferramentas digitais nos processos de produção coletiva e ou individual."
+  },
+  {
+   "c": "EM13LGG701",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade por meio de práticas de linguagem, no âmbito de aulas ou de projetos da área, que impliquem processos de experimentação, criação e produção, em autoria colaborativa de textos ou atos de linguagem, com as diferentes linguagens e com a experimentação de tecnologias digitais. Esse desenvolvimento implica: conhecer e explorar as potencialidades das tecnologias para a criação de trabalhos coletivos e colaborativos, em práticas como: criação de enciclopédias colaborativas, dicionários de regionalismos, videodança, jogos e aplicativos para práticas corporais. Ele pressupõe dimensões de criatividade, inovação, colaboração, ética e valores, possibilitando o trabalho interdisciplinar e transdisciplinar.",
+   "o": ""
+  },
+  {
+   "c": "EM13LGG702",
+   "k": "ING",
+   "d": "",
+   "o": "A língua Inglesa contribui com essa habilidade ao desenvolver atividades utilizando as mídias e as ferramentas digitais nos processos de produção coletiva e ou individual."
+  },
+  {
+   "c": "EM13LGG702",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade por meio da problematização e da experimentação de usos, formas e alcances da tecnologia, nas diferentes práticas de linguagem de diferentes campos de atuação e na avaliação de como essas práticas impactam os processos de formação dos sujeitos contemporâneos.",
+   "o": "a) Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: sexualidade, gênero, etnias, cuidado com o corpo, estética, esporte e sociedade."
+  },
+  {
+   "c": "EM13LGG702",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade por meio de práticas de linguagem, no âmbito de aulas ou de projetos da área, que impliquem processos de experimentação, criação e produção, em autoria colaborativa de textos ou atos de linguagem, com as diferentes linguagens e com a experimentação de tecnologias digitais. Esse desenvolvimento implica: conhecer e explorar as potencialidades das tecnologias para a criação de trabalhos coletivos e colaborativos, em práticas como: criação de enciclopédias colaborativas, dicionários de regionalismos, videodança, jogos e aplicativos para práticas corporais. Ele pressupõe dimensões de criatividade, inovação, colaboração, ética e valores, possibilitando o trabalho interdisciplinar e transdisciplinar.",
+   "o": ""
+  },
+  {
+   "c": "EM13LGG703",
+   "k": "ING",
+   "d": "",
+   "o": "A língua Inglesa contribui com essa habilidade ao desenvolver atividades utilizando as mídias e as ferramentas digitais nos processos de produção coletiva e ou individual."
+  },
+  {
+   "c": "EM13LGG703",
+   "k": "EDF",
+   "d": "A Educação Física contribui no desenvolvimento dessa habilidade por meio de práticas de linguagem, no âmbito de aulas ou de projetos da área, que impliquem processos de experimentação, criação e produção, em autoria colaborativa de textos ou atos de linguagem, com as diferentes linguagens e com a experimentação de tecnologias digitais. Esse desenvolvimento implica: conhecer e explorar as potencialidades das tecnologias para a criação de trabalhos coletivos e colaborativos, em práticas como: criação de enciclopédias colaborativas, dicionários de regionalismos, videodança, jogos e aplicativos para práticas corporais. Ele pressupõe dimensões de criatividade, inovação, colaboração, ética e valores.",
+   "o": "a)Vivências, experimentação, reflexão, compreensão, discussão, análises e produção de conceitos de práticas corporais não-intitucionalizadas como: atividades cênicas, atividades circenses, atividades recreativas, outras; b)Compreensão, análise, reflexão, discussão, produção de conceitos sobre tópicos emergentes como: estética, esporte e sociedade.."
+  },
+  {
+   "c": "EM13LGG703",
+   "k": "ART",
+   "d": "",
+   "o": "As mídias e as ferramentas digitais nas artes. Os processos criativos, as experimentações dos recursos tecnológicos, conhecer e explorar as potencialidades das tecnologias para a criação de trabalhos artísticos, conhecer e promover os valores éticos e não proliferação de discursos de ódio, cientes que existe uma legislação a ser cumprida; Propor aos jovens a criação de uma obra de arte de autoria coletiva, utilizando softwares e mídias digitais, agregando os variados recursos semióticos; diálogos com práticas das culturas juvenis e Projeto de Vida."
+  },
+  {
+   "c": "EM13LGG704",
+   "k": "ING",
+   "d": "",
+   "o": "A língua Inglesa contribui com essa habilidade ao desenvolver atividades utilizando as mídias e as ferramentas digitais nos processos de produção coletiva e ou individual."
+  },
+  {
+   "c": "EM13LGG704",
+   "k": "ART",
+   "d": "A Arte contribui no desenvolvimento dessa habilidade por meio de práticas de investigação, pesquisa, produção e distribuição de informação no contexto digital, tanto no âmbito de práticas da linguagem artística em seus processos de estudos, como no âmbito de projetos da área, sendo possível a articulação com o desenvolvimento das habilidades EM13LP11 e EM13LP28. Esse desenvolvimento implica a dimensão ética, colaborativa e criativa na produção e distribuição do conhecimento nas redes, bem como o fortalecimento do aprender a aprender, com ampliação da autonomia. 1º AO 3º ANO OBJETOS DE CONHECIMENTO",
+   "o": "Curadoria Digital."
+  },
+  {
+   "c": "EM13LP02",
+   "k": "LPO",
+   "d": "",
+   "o": "Situações de produção, circulação e recepção de texto. Coesão e Coerência. Estrutura, construção e estilos de gêneros textuais. Relações lógico-discursivas. Construção de sentidos (pressuposição e inferência; dêixis, anáfora, catáfora, elipse, substituição, lexical, referência e outros)."
+  },
+  {
+   "c": "EM13LP03",
+   "k": "LPO",
+   "d": "",
+   "o": "Reconstrução de aspectos da interdiscursividade e da intertextualidade (informação, intencionalidade, aceitabilidade, situacionalidade). Análise e compreensão de paráfrase, paródia, estilização e outros)."
+  },
+  {
+   "c": "EM13LP04",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise e compreensão dos aspectos de textualidade e intertextualidade, utilizados para explicação e consistência a posionamentos e informações. (paráfrase, citação e estilização)."
+  },
+  {
+   "c": "EM13LP06",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise de contextos de produção e os efeitos de sentidos: recursos diferenciados de pontuações e outras notações (escolha de palavras ou expressões), elementos significativos para a construção de relações entre recursos expressivos e efeitos de sentidos (ambiguidade, conotação, denotação) nos gêneros propaganda, reportagens, quadrinhos e outros. Semântica."
+  },
+  {
+   "c": "EM13LP07",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise em contextos de produção dos diferentes gêneros, de diferentes modalidades (epistêmica, deôntica e apreciativa) elementos linguísticos que marcam a posição do enunciador. Análise de expressões e de diferentes recursos gramaticais que operam como modalizadores (verbos modais, tempos e modos verbais, expressões modais, adjetivos, locuções ou orações adjetivas, advérbios, locuções ou orações adverbiais, entonação etc.), uso de estratégias de impessoalização (uso da terceira pessoa e de voz passiva etc.). Morfologia."
+  },
+  {
+   "c": "EM13LP08",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise dos elementos e aspectos da sintaxe do português, usos e efeitos de sentido (sintagma nominal, categorias sintáticas, os processos de coordenação e subordinação e suas relações na estruturação e produção de sentido dos textos, sintaxe de concordância e de regências e seus complementos). Análise Sintática."
+  },
+  {
+   "c": "EM13LP12",
+   "k": "LPO",
+   "d": "",
+   "o": "Planejamento do processo de produção de texto, informações, dados e argumentos em fontes confiáveis, Curadoria de informação. Planejamento do processo de produção de texto, informações, dados e argumentos em fontes confiáveis, Curadoria de informação."
+  },
+  {
+   "c": "EM13LP13",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise dos efeitos de sentido decorrentes de escolhas de elementos sonoros (volume, timbre, intensidade, pausas, ritmo, efeitos sonoros, sincronização etc.) em textos de diferentes gêneros da cultura audiovisual (canções, videoclipes, radionovelas, entre outros)."
+  },
+  {
+   "c": "EM13LP14",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise dos efeitos de sentidos de composição das imagens: enquadramento, ângulo/vetor, foco/profundidade de campo, iluminação, cor, linhas, formas, etc. Profundidade de campo: disposição e transição, movimentos de câmera, remix, entre outros. Sequenciação (disposição e transição, movimentos de câmera, remix, entre outros), Performances (movimentos do corpo, gestos, ocupação do espaço cênico), dos elementos sonoros (entonação, trilha sonora, sampleamento etc.)."
+  },
+  {
+   "c": "EM13LP15",
+   "k": "LPO",
+   "d": "",
+   "o": "Produção de texto, revisão e reescrita e uso do conhecimento dos aspectos notacionias - Ortografia padrão, pontuação adequada, mecanismos de concordância nominal e verbal, regência verbal, etc. e escolha da variável linguística adequada ao contexto de produção. Fonologia. Morfologia. Sintaxe. Produção de texto, revisão e reescrita e uso do conhecimento dos aspectos notacionias - Ortografia padrão, pontuação adequada, mecanismos de concordância nominal e verbal, regência verbal, etc. e escolha da variável linguística adequada ao contexto de produção. Fonologia. Morfologia. Sintaxe."
+  },
+  {
+   "c": "EM13LP16",
+   "k": "LPO",
+   "d": "",
+   "o": "Produção de textos orais e multissemióticos (modulação de voz, entonação, ritmo, altura e intensidade, respiração etc.) e à cinestesia (postura corporal, movimentos e gestualidade significativa, expressão facial, contato de olho com plateia etc.). Produção de textos orais e multissemióticos (modulação de voz, entonação, ritmo, altura e intensidade, respiração etc.) e à cinestesia (postura corporal, movimentos e gestualidade significativa, expressão facial, contato de olho com plateia etc.)."
+  },
+  {
+   "c": "EM13LP21",
+   "k": "LPO",
+   "d": "",
+   "o": "Produção colaborativa de playlists e outros, comentário pessoal e socialização, considerando o contexto de produção, circulação, recepção dos playlists dos gêneros impressos e digitais da esfera midiática da cultura juvenil. Produção colaborativa de playlists e outros, comentário pessoal e socialização, considerando o contexto de produção, circulação, recepção dos playlists dos gêneros impressos e digitais da esfera midiática da cultura juvenil."
+  },
+  {
+   "c": "EM13LP23",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise e identificação nos gêneros textuais da esfera política dos interesses que motivam os discursos políticos, programas e propostas de governo a fim de posicionar-se crítica e eticamente em relação a esses discursos. Análise e identificação nos gêneros textuais da esfera política dos Tecnologia: Ciência e interesses que motivam os discursos políticos, programas e propostas de Tecnologia. governo a fim de posicionar-se crítica e eticamente em relação a esses discursos."
+  },
+  {
+   "c": "EM13LP24",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise das condições de produção, circulação e recepção de práticas de linguagens artísticas e culturais (letra de música, grafite, pichação, desenhos e outros). identificando os efeitos de sentido produzidos pelos recursos expressivos das diferentes linguagens."
+  },
+  {
+   "c": "EM13LP25",
+   "k": "LPO",
+   "d": "",
+   "o": "Discussão sobre temas de interesse e relevância social, praticando a oralidade com a escuta atenta, respeitando turno e tempo de fala, em debates, mesa redonda, assembleias, relatos, fóruns de discussão, dentre outros. Discussão sobre temas de interesse e relevância social, praticando a oralidade com a escuta atenta, respeitando turno e tempo de fala, em debates, mesa redonda, assembleias, relatos, fóruns de discussão, dentre outros. Discussão sobre temas de interesse e relevância social, praticando a oralidade com a escuta atenta, respeitando turno e tempo de fala, em debates, mesa redonda, assembleias, relatos, fóruns de discussão, dentre outros."
+  },
+  {
+   "c": "EM13LP26",
+   "k": "LPO",
+   "d": "",
+   "o": "Leitura e análise da relação do contexto de produção, circulação e recepção de gêneros textuais da esfera social de circulação: política e jurídica em âmbito universal, nacional e local (Estatuto da Criança e Adolescentes-ECA, normativas, decretos e outros)."
+  },
+  {
+   "c": "EM13LP31",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise do contexto de produção, circulação e recepção de textos de divulgação científica. Compreensão crítica de textos de divulgação científica orais, escritos e multissemióticos de diferentes áreas do conhecimento. Organização tópico discursiva. Curadoria da informação."
+  },
+  {
+   "c": "EM13LP38",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise de gêneros discursivos: notícias, reportagem, entrevista, entre outros, e seus efeitos de sentido com foco na parcialidade, imparcialidade e neutralidade. Contexto de produção, circulação e recepção de textos do campo jornalístico-midiático. Realização de curadoria de textos de diferentes gêneros, veiculados em meios diversos do campo jornalísticomidiático. Usos de recursos linguísticos e multissemióticos. Análise de gêneros discursivos: notícias, reportagem, entrevista, entre outros, e seus efeitos de sentido com foco na parcialidade, imparcialidade e neutralidade. Contexto de produção, circulação e recepção de textos do campo jornalístico-midiático. Realização de curadoria de textos de diferentes gêneros, veiculados em meios diversos do campo jornalísticomidiático. Usos de recursos linguísticos e multissemióticos."
+  },
+  {
+   "c": "EM13LP44",
+   "k": "LPO",
+   "d": "",
+   "o": "Contexto de produção, circulação e recepção de textos publicitários. Análise de textos de gêneros discursivos contemporâneos de campanhas publicitárias e políticas. Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem). Recursos linguísticos e multissemióticos e efeitos de sentido. Mecanismos de persuasão e argumentação. Contexto de produção, circulação e recepção de textos publicitários. Análise de textos de gêneros discursivos contemporâneos de campanhas publicitárias e políticas. Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem). Recursos linguísticos e multissemióticos e efeitos de sentido. Mecanismos de persuasão e argumentação."
+  },
+  {
+   "c": "EM13LP45",
+   "k": "LPO",
+   "d": "",
+   "o": "Consideração do contexto de produção, circulação e recepção de textos do campo jornalístico-midiático. Relação entre os gêneros em circulação no campo jornalístico-midiático, mídias locais, regionais, nacionais, globais e práticas da cultura digital. Usos de recursos linguísticos e multissemióticos e seus efeitos de sentido. Produção de textos do campo jornalístico-midiático: processo. Uso de diferentes mídias. Consideração do contexto de produção, circulação e recepção de textos do campo jornalístico-midiático. Relação entre os gêneros em circulação no campo jornalístico-midiático, mídias locais, regionais, nacionais, globais e práticas da cultura digital. Usos de recursos linguísticos e multissemióticos e seus efeitos de sentido. Produção de textos do campo jornalístico-midiático: processo. Uso de diferentes mídias."
+  },
+  {
+   "c": "EM13LP48",
+   "k": "LPO",
+   "d": "",
+   "o": "Reconstrução das condições de produção, circulação e recepção de textos da literatura brasileira e da ocidental. Escolas Literárias e Obras Literárias. Reconstrução da textualidade e compreensão dos efeitos de sentido provocados pelos usos. Recursos linguísticos e multissemióticos e efeitos de sentido. Relações entre textos, com foco em assimilações e rupturas quanto a temas e procedimentos estéticos. Reconstrução das condições de produção, circulação e recepção de textos da literatura brasileira e da ocidental. Escolas Literárias e Obras Literárias. Reconstrução da textualidade e compreensão dos efeitos de sentido provocados pelos usos. Recursos linguísticos e multissemióticos e efeitos de sentido. Relações entre textos, com foco em assimilações e rupturas quanto a temas e procedimentos estéticos."
+  },
+  {
+   "c": "EM13LP49",
+   "k": "LPO",
+   "d": "",
+   "o": "Repertórios de leitura: textos artístico-literários de diferentes gêneros. Gêneros artístico-literários: regularidades. Reconstrução das condições de produção, circulação e recepção de textos artístico-literários. Escolas Literárias e Obras Literárias. Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem). Reconstrução da textualidade e compreensão dos efeitos de sentido provocados pelos usos de recursos linguísticos e multissemióticos. Repertórios de leitura: textos artístico-literários de diferentes gêneros. Gêneros artístico-literários: regularidades. Reconstrução das condições de produção, circulação e recepção de textos artístico-literários. Escolas Literárias e Obras Literárias. Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem). Reconstrução da textualidade e compreensão dos efeitos de sentido provocados pelos usos de recursos linguísticos e multissemióticos."
+  },
+  {
+   "c": "EM13LP52",
+   "k": "LPO",
+   "d": "",
+   "o": "Repertórios de leitura: literatura brasileira, portuguesa, indígena, africana e latino-americana, tocantinense. Reconstrução das condições de produção, circulação e recepção de textos artístico-literários. Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem). Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos. Relações entre textos e discursos. Escolas Literárias e Obras Literárias. Repertórios de leitura: literatura brasileira, portuguesa, indígena, africana e latino-americana, tocantinense. Reconstrução das condições de produção, circulação e recepção de textos artístico-literários. Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem). Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos. Relações entre textos e discursos. Escolas Literárias e Obras Literárias."
+  },
+  {
+   "c": "EM13LP53",
+   "k": "LPO",
+   "d": "",
+   "o": "Repertórios de leitura e de apreciação. Reconstrução das condições de produção, circulação e recepção. Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem). Reconstrução da textualidade e compreensão dos efeitos de sentido provocados pelos usos de recursos linguísticos e multissemióticos. Relações entre textos e discursos. Produção de textos orais e escritos (reescrita). Obras Literárias. Repertórios de leitura e de apreciação. Reconstrução das condições de produção, circulação e recepção. Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem). Reconstrução da textualidade e compreensão dos efeitos de sentido provocados pelos usos de recursos linguísticos e multissemióticos. Relações entre textos e discursos. Produção de textos orais e escritos (reescrita). Obras Literárias."
+  },
+  {
+   "c": "EM13LP54",
+   "k": "LPO",
+   "d": "",
+   "o": "Relações entre textos, com foco em assimilações e rupturas quanto a temas e procedimentos estéticos. Obras Literárias. Definição das condições de produção, circulação e recepção. Usos de recursos linguísticos e multissemióticos. Intertextualidade, paródia e estilização. Produção de textos escritos, multimodais e reescrita de paródias, estilizações, fanfics, fanclipes etc. Relações entre textos, com foco em assimilações e rupturas quanto a temas e procedimentos estéticos. Obras Literárias. Definição das condições de produção, circulação e recepção. Usos de recursos linguísticos e multissemióticos. Intertextualidade, paródia e estilização. Produção de textos escritos, multimodais e reescrita de paródias, estilizações, fanfics, fanclipes etc."
+  },
+  {
+   "c": "EM13LP01",
+   "k": "LPO",
+   "d": "",
+   "o": "Leitura, escuta e apreciação de textos de diferentes gêneros. Condição de Produção, reestruturação, circulação de textos escritos e multimodais em diversos domínios / esferas, gêneros e suportes (relato, debate, teatro, resumo, conto, crônica, carta ao leitor, memórias, pesquisa, reportagem, artigo de opinião, conto fantástico, editorial, carta argumentativa, resenha crítica, notícia, texto publicitário, artigos de leis, instruções e outros)."
+  },
+  {
+   "c": "EM13LP20",
+   "k": "LPO",
+   "d": "",
+   "o": "Produção de textos orais, escritos e ampliação de repertórios. Socialização de interesses comuns em relação às práticas culturais, no âmbito nacional, regional e local. (músicas, danças, filmes, livros, peças teatrais, jogos e outros)."
+  },
+  {
+   "c": "EM13LP29",
+   "k": "LPO",
+   "d": "",
+   "o": "Produção de resumos e paráfrases, utilizando estratégias e mecanismos lexicais e sintáticos. Recursos linguístios que apresentam os modos de introdução das vozes no texto: uso de paráfrases, reportando às citações e marcas de discurso. Produção de texto, reescrita de resumo e resenhas. Produção de resumos e paráfrases, utilizando estratégias e mecanismos lexicais e sintáticos. Recursos linguístios que apresentam os modos de introdução das vozes no texto: uso de paráfrases, reportando às citações e marcas de discurso. Produção de texto, reescrita de resumo e resenhas."
+  },
+  {
+   "c": "EM13LP36",
+   "k": "LPO",
+   "d": "",
+   "o": "Relações entre textos, interesses e estratégias de viralização e efeitos de persuasão. Análise crítica dos novos meios de produção e circulação de textos do campo jornalístico-midiático e publicitário em diferentes mídias."
+  },
+  {
+   "c": "EM13LP37",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise comparativa de projetos editoriais (institucionais, privados, públicos, financiados, independentes e outros). Relação entre textos e discursos do campo jornalístico-midiático."
+  },
+  {
+   "c": "EM13LP40",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise e checagem de informações veiculadas em discursos jornalísticos midiáticos. Posicionamento crítico e ético diante desses discursos. Análise e checagem de informações veiculadas em discursos jornalísticos midiáticos. Posicionamento crítico e ético diante desses discursos."
+  },
+  {
+   "c": "EM13LP42",
+   "k": "LPO",
+   "d": "",
+   "o": "Reconstrução do contexto de produção, circulação e recepção de textos do campo jornalístico-midiático. Curadoria de informações. Relação entre textos, discursos, mídias e práticas da cultura digital. Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem)."
+  },
+  {
+   "c": "EM13LP05",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise de contextos de produção de textos argumentativos, dos posicionamentos assumidos, dos movimentos argumentativos (sustentação, refutação/contra-argumentação e negociação)."
+  },
+  {
+   "c": "EM13LP17",
+   "k": "LPO",
+   "d": "",
+   "o": "Elaboração de roteiros para a produção de vídeos variados (vlog, videoclipe, videominuto, documentário etc.) e apresentações teatrais, narrativas multimídia e transmídia, podcasts, playlists comentadas etc. Elaboração de roteiros para a produção de vídeos variados (vlog, videoclipe, videominuto, documentário etc.) e apresentações teatrais, narrativas multimídia e transmídia, podcasts, playlists comentadas etc."
+  },
+  {
+   "c": "EM13LP19",
+   "k": "LPO",
+   "d": "",
+   "o": "Textos multimodais (perfis variados, gifs biográficos, biodata, currículo web, videocurrículo, etc.) e de ferramentas digitais (ferramenta de gif, wiki, site etc.). Planejamento, elaboração, revisão e apresentação de textos orais e multimodais diversos, para falar de si, por meio de ferramentas digitais."
+  },
+  {
+   "c": "EM13LP22",
+   "k": "LPO",
+   "d": "",
+   "o": "Construção colaborativa de registros dinâmicos (mapas, wiki, etc.) com dados sobre áreas de atuação, dados sobre formação, fazeres, produções, depoimentos de profissionais etc, para fundamentar suas escolhas pessoais e profissionais."
+  },
+  {
+   "c": "EM13LP27",
+   "k": "LPO",
+   "d": "",
+   "o": "Participação nas práticas da vida pública, com discussão sobre problemas que afetam a coletividade. Apreciação e réplica. Curadoria de informações e opiniões. Produção escrita (planejamento, textualização, revisão e edição) de textos linguísticos e multissemióticos."
+  },
+  {
+   "c": "EM13LP28",
+   "k": "LPO",
+   "d": "",
+   "o": "Planejamento de situações de estudo individual ou coletivo. Seleção de fontes confiáveis (localizar e relacionar informações, inferir, apreciar eticamente, entre outras), uso de palavras-chave e filtro de resultados; cruzamento de informações, etc. Curadoria de informações. Planejamento de situações de estudo individual ou coletivo. Seleção de fontes confiáveis (localizar e relacionar informações, inferir, apreciar eticamente, entre outras), uso de palavras-chave e filtro de resultados; cruzamento de informações, etc. Curadoria de informações."
+  },
+  {
+   "c": "EM13LP33",
+   "k": "LPO",
+   "d": "",
+   "o": "Seleção, elaboração e utilização de instrumentos de coleta de dados e informações (entrevistas, questionários, enquetes, mapeamentos, opinários e outros). Coleta, tratamento e análise dos dados obtidos."
+  },
+  {
+   "c": "EM13LP34",
+   "k": "LPO",
+   "d": "",
+   "o": "Produção de textos orais e escritos e revisão de textos escritos para a divulgação do conhecimento e de resultados de levantamentos e pesquisas, tais como: textos monográficos, multissemióticos, ensaios, artigos de divulgação científica, verbete de enciclopédia (colaborativo ou não), infográfico (estático ou animado), relato de experimento, relatório, relatório multimidiático de campo, reportagem científica, podcast ou vlog científico, apresentações orais, seminários, comunicações em mesas redondas, mapas dinâmicos, etc."
+  },
+  {
+   "c": "EM13LP47",
+   "k": "LPO",
+   "d": "",
+   "o": "Relação entre os gêneros em circulação no campo jornalístico-midiático, mídias locais, regionais, nacionais, globais e práticas da cultura digital. Mapeamento de práticas do campo artístico-literário, considerando a literatura tocantinense impressa e digital. Obras Literárias. Apreciação e réplica. Processos de produção de textos linguísticos e multissemióticos em gêneros do campo artístico-literário. Relação entre os gêneros em circulação no campo jornalístico-midiático, mídias locais, regionais, nacionais, globais e práticas da cultura digital. Mapeamento de práticas do campo artístico-literário, considerando a literatura tocantinense impressa e digital. Obras Literárias. Apreciação e réplica. Processos de produção de textos linguísticos e multissemióticos em gêneros do campo artístico-literário."
+  },
+  {
+   "c": "EM13LP51",
+   "k": "LPO",
+   "d": "",
+   "o": "Práticas do letramento literário para escolha de títulos. Análise de contextos de produção, circulação e recepção de obras. Curadoria de títulos da literatura contemporânea. Obras Literárias. Apreciação e réplica. Compartilhamento de experiências leitoras (roda de conversa, de leitura, em sites, em blogs, em feeds, redes sociais e outros) Reconstrução da textualidade e compreensão dos efeitos de sentido provocados pelos usos de recursos linguísticos e multissemióticos."
+  },
+  {
+   "c": "EM13LP09",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise da abordagem da Gramática tradicional com as Gramáticas descritivas da atualidade. Reconhecimento dos recortes e abordagens da gramátitca prescritiva e da descritiva. Compreensão das varidades de prestígo e estigmatizadas e usos no contexto de produção, circulação e recepção de textos. Variação Linguística."
+  },
+  {
+   "c": "EM13LP10",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise dos fenômenos de variações fonético-fonológica, lexicais em suas diferentes dimensões (regional, histórica, social, situacional, ocupacional, etária etc.). Análise de situações de produção, circulação, recepção e de atos de linguagem utilizando as variedades da língua que marcam posicionamentos, preconceitos e relações de poder."
+  },
+  {
+   "c": "EM13LP46",
+   "k": "LPO",
+   "d": "",
+   "o": "Contexto de produção, circulação e recepção de textos literários. Escolas Literárias e Obras literárias. Apreciação e réplica. Práticas de trocas de experiências leitoras."
+  },
+  {
+   "c": "EM13LP50",
+   "k": "LPO",
+   "d": "",
+   "o": "Reconstrução das condições de produção, circulação e recepção de textos literários. Escolas Literárias e Obras Literárias. Dialogia e relações entre textos literários e/ou artísticos."
+  },
+  {
+   "c": "EM13LP11",
+   "k": "LPO",
+   "d": "",
+   "o": "Leitura de textos além da superfície, relações entre informações explicitas e implícitas, inferências textuais; Produção de síntese textual. Curadoria de informação."
+  },
+  {
+   "c": "EM13LP18",
+   "k": "LPO",
+   "d": "",
+   "o": "Condições de produção, circulação e recepção de textos e atos de linguagem no contexto digital. Produção de textos e produções miltissemoóticas com finalidades diversas com a utilização de Softwares de edição de textos, fotos, vídeos e áudio, além de ferramentas e ambientes colaborativos."
+  },
+  {
+   "c": "EM13LP30",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise dos contextos de produção, circulação e recepção de textos de divulgação de pesquisas, curadoria de informações e conteúdos em contextos diversos. Seleção dos tipos de pesquisa, suas etapas e seus procedimentos. Ampliação das capacidades de leitura, procedimentos e gêneros digitais de apoio à compreensão dos diferentes tipos de pesquisa: bibliográfica, de campo, experimento científico, levantamento de dados."
+  },
+  {
+   "c": "EM13LP32",
+   "k": "LPO",
+   "d": "",
+   "o": "Contexto de produção, circulação e recepção de textos da divulgação científica. Curadoria de informações. Procedimentos de pesquisa: coleta e análise de dados. Relações entre textos e discursos. Gêneros textuais das esferas sociais de circulação: cotidiana, escolar, política, produção e consumo, publicitária, midiática, impressa e outros."
+  },
+  {
+   "c": "EM13LP35",
+   "k": "LPO",
+   "d": "",
+   "o": "Apresentações orais, a produção de textos multissemióticos (efeitos de transição, slides mestres, layouts personalizados, gravação de áudios em slides etc.)."
+  },
+  {
+   "c": "EM13LP39",
+   "k": "LPO",
+   "d": "",
+   "o": "Checagem de fatos noticiados e fotos publicadas (verificar/avaliar veículo, fonte, data e local da publicação, autoria, URL, formatação; comparar diferentes fontes; consultar ferramentas e sites checadores etc.)."
+  },
+  {
+   "c": "EM13LP41",
+   "k": "LPO",
+   "d": "",
+   "o": "Análise e comparação de feeds de notícias nas redes sociais.Curadoria de informação"
+  },
+  {
+   "c": "EM13LP43",
+   "k": "LPO",
+   "d": "",
+   "o": "Contexto de produção, circulação e recepção de conteúdos, na cultura de rede. Curadoria e redistribuição de conteúdos. Apreciação (avaliação de aspectos éticos, estéticos e políticos em textos e produções artísticas e culturais etc.). Réplica (posicionamento responsável em relação a temas, visões de mundo e ideologias veiculados por textos e atos de linguagem)."
+  }
+ ]
+}

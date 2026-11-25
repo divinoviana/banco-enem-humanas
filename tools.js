@@ -293,12 +293,17 @@
     else $('#toolOut').innerHTML = `<div class="out-vazio"><b>${m === 'pei' ? 'O PEI aparece aqui.' : 'A atividade aparece aqui.'}</b><p>${m === 'pei' ? 'Preencha o estudante e o componente e clique em Gerar PEI. Você poderá editar cada campo antes de copiar para o SGE ou baixar em PDF e Word.' : 'Preencha o estudante e a aula e clique em Gerar atividade. Você verá a folha pronta, com opção de baixar em PDF ou Word, e pode gerar outras versões.'}</p></div>`;
   }
 
-  // ---------- listas do DCT-TO (Ciências Humanas) ----------
-  let DCT = null, carregandoDCT = null;
-  const SIGLA = { 'Filosofia': 'FIL', 'Sociologia': 'SOC', 'História': 'HIS', 'Geografia': 'GEO' };
-  function carregarDCT() {
-    if (DCT) return Promise.resolve(DCT);
-    return carregandoDCT ||= fetch('dct-chsa.json?v=1').then(r => { if (!r.ok) throw new Error(); return r.json() }).then(j => (DCT = j)).catch(() => { carregandoDCT = null; return null });
+  // ---------- listas do DCT-TO (todas as áreas) ----------
+  const SIGLA = {
+    'Filosofia': ['chsa', 'FIL'], 'Sociologia': ['chsa', 'SOC'], 'História': ['chsa', 'HIS'], 'Geografia': ['chsa', 'GEO'],
+    'Matemática': ['mat', 'MAT'], 'Biologia': ['cnt', 'BIO'], 'Química': ['cnt', 'QUI'], 'Física': ['cnt', 'FIS'],
+    'Língua Portuguesa': ['lgg', 'LPO'], 'Redação': ['lgg', 'LPO'], 'Educação Física': ['lgg', 'EDF'], 'Arte': ['lgg', 'ART'], 'Língua Inglesa': ['lgg', 'ING']
+  };
+  const DCTS = {}, CARREGANDO = {};
+  let DCT = null;
+  function carregarDCT(arq) {
+    if (DCTS[arq]) return Promise.resolve(DCTS[arq]);
+    return CARREGANDO[arq] ||= fetch(`dct-${arq}.json?v=2`).then(r => { if (!r.ok) throw new Error(); return r.json() }).then(j => (DCTS[arq] = j)).catch(() => { CARREGANDO[arq] = null; return null });
   }
   const curto = (t, n = 110) => t.length > n ? t.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : t;
   function itensObjeto(o) {
@@ -306,13 +311,15 @@
     return partes.length > 1 ? partes : o.split(/\.\s+(?=[A-ZÁÉÍÓÚÂÊÔÃÕÇ])/).map(x => x.trim().replace(/\.$/, '')).filter(x => x.length > 2);
   }
   async function atualizarListasDCT() {
-    const sig = SIGLA[$('#pComp').value];
+    const par = SIGLA[$('#pComp').value];
     const hab = $('#pHabLista'), obj = $('#pObjLista');
-    if (!sig) {
-      hab.innerHTML = '<option value="">Lista disponível só para Filosofia, Sociologia, História e Geografia</option>'; hab.disabled = true;
+    if (!par) {
+      hab.innerHTML = '<option value="">Sem lista do DCT-TO para este componente</option>'; hab.disabled = true;
       obj.innerHTML = '<option value="">—</option>'; obj.disabled = true; return;
     }
-    const d = await carregarDCT();
+    const [arq, sig] = par;
+    const d = await carregarDCT(arq);
+    DCT = d;
     if (!d) { hab.innerHTML = '<option value="">Não foi possível carregar a lista. Escreva a habilidade abaixo.</option>'; hab.disabled = true; return }
     const ents = d.entradas.filter(e => e.k === sig);
     hab.disabled = false;
